@@ -1,0 +1,645 @@
+body {
+    background-color: black;
+  }
+  
+  .water {
+    position: absolute;
+    top: -100px;
+    left: -1000px;
+    width: 1280px;
+    height: 578px;
+    margin: 10% auto;
+    transform: scale(0.5);
+    animation: swim 17s normal 18s infinite;
+  }
+  .waterB {
+    position: absolute;
+    left: 1500px;
+    width: 1280px;
+    height: 175px;
+    top:-300px;
+    margin: 10% auto;
+    transform: scale(0.8);
+    animation: swimB 26s normal 14s infinite;
+  }
+  .waterC{
+  position: absolute;
+  left: -1000px;
+  width: 1280px;
+  height: 578px;
+  top: 300px;
+  margin: 10% auto;
+  animation: swimC 30s normal 35s infinite;
+  }
+  #egg {
+    position: relative;
+    top: -100px;
+    left: 425px;
+    display: block;
+    width: 125px;
+    height: 75px;
+    background-color:rgb(10, 10, 10);
+    border: rgba(192,0,7,1);
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    cursor: pointer;
+  }
+
+  
+  .leftEyeContain, .leftEyeContainB, .leftEyeContainC {
+    position: relative;
+    top: 30px;
+    left: 105px;
+    width: 24px;
+    height: 24px;
+    background: #161616;
+    border: 1px solid #103e4f;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  .rightEyeContain, .rightEyeContainB, .rightEyeContainC, .rightEyeContainD, .rightEyeContainE,.rightEyeContainF, .rightEyeContainG, .rightEyeContainH  {
+    position: relative;
+    top: -23px;
+    left: 65px;
+    width: 15px;
+    height: 15px;
+    background: #161616;
+    border: 1px solid #103e4f;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .leftEyeContainB{
+    top: 3px;
+    left: 42px;
+    width: 35px;
+    height: 30px;
+  }
+
+  .leftEyeContainC{
+    top: -30px;
+    left: -5px;
+}
+  .eye {
+    width: 80%;
+    height: 80%;
+    background: rgba(192,0,7,1);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+  }
+  
+  .redEye {
+    width: 5px;
+    height: 5px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+  }
+  .eyeCenter{
+    top: 4px;
+    left: 5px;
+    width: 19px;
+    height: 16px;
+  }
+  .eyeRight{
+    width: 10px;
+    height: 10px;
+    background: rgba(192,0,7,1);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    
+  }
+  .rightRedEye{
+    width: 5px;
+    height: 5px;
+    top: 2px;
+    left: 3px;
+  }
+  .rightEyeContain{
+    top: -35px;
+    left: 81px;
+  }
+  .rightEyeContainB{
+    top: -51px;
+    left: 24px;
+  }
+  .rightEyeContainC{
+    top: -85px;
+    left: 85px;
+  }
+  .rightEyeContainD{
+    top: -102px;
+    left: 21px;
+  }
+  .rightEyeContainE{
+    top: -135px;
+    left: 93px;
+  }
+  .rightEyeContainF{
+    top: -150px;
+    left: 12px;
+  }
+  .rightEyeContainG{
+    top: -167px;
+    left: 74px;
+  }
+  .rightEyeContainH{
+    top: -182px;
+    left: 30px;
+  }
+  
+  .first {
+    position: absolute;
+    left: 395px;
+    top: -128px;
+    z-index: -1;
+    -webkit-transform: rotate(-47deg);
+    transform: rotate(-47deg);
+  }
+  
+  .second {
+    position: absolute;
+    left: 381px;
+    top: -123px;
+    z-index: -1;
+    -webkit-transform: rotate(-51deg);
+    transform: rotate(-51deg);
+  }
+  
+  .third {
+    position: absolute;
+    left: 382px;
+    top: -120px;
+    z-index: -1;
+    -webkit-transform: rotate(-55deg);
+    transform: rotate(-55deg);
+  }
+  
+  .fourth {
+    position: absolute;
+    left: 365px;
+    top: -115px;
+    z-index: -1;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+  }
+  
+  .fifth {
+    position: absolute;
+    left: 375px;
+    top: -18px;
+    z-index: -1;
+    -webkit-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+  }
+  
+  .sixth {
+    position: absolute;
+    left: 375px;
+    top: -5px;
+    z-index: -1;
+    -webkit-transform: rotate(-125deg);
+    transform: rotate(-125deg);
+  }
+  
+  .seventh {
+    position: absolute;
+    left: 375px;
+    top: 4px;
+    z-index: -1;
+    -webkit-transform: rotate(-130deg);
+    transform: rotate(-130deg);
+  }
+  
+  .eigth {
+    position: absolute;
+    left: 397px;
+    top: 12px;
+    z-index: -1;
+    -webkit-transform: rotate(-137deg);
+    transform: rotate(-137deg);
+  }
+  .tentacle{
+    cursor: pointer;
+  }
+  .tentacle2{
+    cursor: pointer;
+  }
+  .tentacle div {
+    font-size: 45px;
+    height: 100px;
+    width: 10px;
+    border-radius: 100% 100%;
+    background: #2a2a2a;
+    box-shadow: 0.1em -0.8em 0 #111111 inset, 0 0 0 0.3em #2a2a2a inset;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-animation: rot 1s ease-in-out alternate infinite;
+    animation: rot 1s ease-in-out alternate infinite;
+  }
+  
+  .tentacle div:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 20%;
+    background: red;
+    height: 0.35em;
+    width: 2px;
+    margin: -1px -1px;
+    border-radius: 100%;
+    box-shadow: -0.1em 0.1em 0 #65000b inset, 0 0 0 0.1em #b20013 inset;
+  }
+  
+  .tentacle div div {
+    top: auto;
+    bottom: 1em;
+    left: auto;
+    right: 0;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  
+  .tentacle2 div {
+    font-size: 45px;
+    height:100px;
+    width: 10px;
+    border-radius: 100% 100%;
+    background: #2a2a2a;
+    box-shadow: 0.1em -0.8em 0 #111111 inset, 0 0 0 0.3em #2a2a2a inset;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-animation: rot2 1s ease-in-out alternate infinite;
+    animation: rot2 1s ease-in-out alternate infinite;
+  }
+  
+  .tentacle2 div:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 20%;
+    background: red;
+    height: 0.35em;
+    width: 3px;
+    margin: -1px -1px;
+    border-radius: 100%;
+    box-shadow: -0.1em 0.1em 0 #65000b inset, 0 0 0 0.1em #b20013 inset;
+  }
+  
+  .tentacle2 div div {
+    top: auto;
+    bottom: 1em;
+    left: auto;
+    right: 0;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+/*   
+  .bubble {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 100px;
+    background: -moz-radial-gradient(center 45deg, circle closest-corner, rgba(161, 1, 0, 0), rgba(161, 1, 0, .1), rgba(161, 1, 0, .3), rgba(255, 255, 255, .7));
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(161, 1, 0, .5)), to(rgba(255, 255, 255, .9)));
+    background: gradient(center 45deg, circle closest-corner, rgba(75, 190, 200, 0), rgba(161, 1, 0, .1), rgba(161, 1, 0, .3), rgba(255, 255, 255, .7));
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(255, 193, 29, 0.1) 51%, rgba(255, 193, 29, 0.3) 71%, rgba(255, 193, 29, .7) 100%);
+  }
+  
+  .bubble1 {
+    position: absolute;
+    left: 35vw;
+    top: 15vh;
+    z-index: -3;
+    width: 3vw;
+    height: 2vh;
+    -webkit-animation: bubble 2s ease-in-out infinite;
+    animation: bubble 2s ease-in-out infinite;
+  }
+  
+  .bubble2 {
+    position: absolute;
+    left: 35vw;
+    top: 20vh;
+    z-index: -3;
+    width: 3vw;
+    height: 2vh;
+    -webkit-animation: bubble 2s ease-in-out infinite;
+    animation: bubble 2s ease-in-out infinite;
+    -webkit-animation-delay: 0.2s;
+  }
+  
+  .bubble3 {
+    position: absolute;
+    left: 35vw;
+    top: 17vh;
+    z-index: -3;
+    width: 3vw;
+    height: 2vh;
+    -webkit-animation: bubble 2s ease-in-out infinite;
+    animation: bubble 2s ease-in-out infinite;
+    -webkit-animation-delay: 0.5s;
+  }
+  
+  .bubble4 {
+    position: absolute;
+    left: 35vw;
+    top: 21vh;
+    z-index: -3;
+    width: 3vw;
+    height: 2vh;
+    -webkit-animation: bubble 2s ease-in-out infinite;
+    animation: bubble 2s ease-in-out infinite;
+    -webkit-animation-delay: 0.6s;
+  }
+  
+  .bubble5 {
+    position: absolute;
+    left: 35vw;
+    top: 17vh;
+    z-index: -3;
+    width: 3vw;
+    height: 2vh;
+    -webkit-animation: bubble 2s ease-in-out infinite;
+    animation: bubble 2s ease-in-out infinite;
+    -webkit-animation-delay: 0.8s;
+  }
+  
+  .bubble6 {
+    position: absolute;
+    left: 35vw;
+    top: 16vh;
+    z-index: -3;
+    width: 3vw;
+    height: 2vh;
+    -webkit-animation: bubble 2s ease-in-out infinite;
+    animation: bubble 2s ease-in-out infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+   */
+  @keyframes leg {
+    0% {
+      top: -55px;
+    }
+    80% {
+      top: -55px;
+    }
+    90% {
+      top: -30px;
+    }
+    100% {
+      top: -55px;
+    }
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotate(-3deg);
+    }
+    100% {
+      transform: rotate(-6deg);
+    }
+  }
+  
+  @keyframes rot2 {
+    0% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(6deg);
+    }
+  }
+  
+   @keyframes swim {
+    0% {
+    }
+    100% {
+      left: 3000px;
+      top:-500px
+    }
+  }
+  @keyframes swimB {
+    0% {
+    }
+    100% {
+      left: -7000px;
+      top:1500px;
+    }
+  }
+  @keyframes swimC {
+    0% {
+    }
+    100% {
+      left: 3000px;
+      top: -100px;
+    }
+  }
+/*    
+  @keyframes bubble {
+    0% {
+      margin-left: 0px;
+    }
+    50% {
+      margin-left: -300px;
+    }
+    100% {
+      margin-left: -300px;
+      opacity: 0;
+    }
+  } */
+  /* mini */
+.octopus{
+    cursor: pointer;
+  }
+.octopusA{
+  top:45px;
+  left:-20px;
+}
+.octopusB{
+  top:85px;
+  left:150px;
+}
+.octopusC{
+  top:115px;
+  left:-150px;
+}
+.octopusD{
+  top:24vh;
+  left:-40vw;
+  transform: rotate(180deg);
+}
+  #eggMini {
+    position: relative;
+    top: 60px;
+    left: 345px;
+    display: block;
+    background-color: #111111;
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .leftEyeContainMini, .leftEyeContainBMini, .leftEyeContainCMini {
+    top: 25px;
+    left: 55px;
+    width: 17px;
+    height: 15px;
+    border: 0.1px black;
+  }
+  .leftEyeContainBMini{
+    top: 6px;
+    left: 17px;
+    width: 25px;
+    height: 20px;
+  }
+  .leftEyeContainCMini{
+    top: -10px;
+    left: -5px;
+  }
+  .rightEyeContainMini, .rightEyeContainBMini, .rightEyeContainCMini, .rightEyeContainDMini, .rightEyeContainEMini,.rightEyeContainFMini, .rightEyeContainGMini, .rightEyeContainHMini  {
+    background: red;
+    width: 7px;
+    height: 6px;
+  }
+  .rightEyeContainMini{
+    top: -19px;
+    left: 41px;
+  }
+  .rightEyeContainBMini{
+    top: -26px;
+    left: 12px;
+  }
+  .rightEyeContainCMini{
+    top: -42px;
+    left: 44px;
+  }
+  .rightEyeContainDMini{
+    top: -50px;
+    left: 11px;
+  }
+  .rightEyeContainEMini{
+    top: -63px;
+    left: 36px;
+  }
+  .rightEyeContainFMini{
+    top: -71px;
+    left: 18px;
+  }
+  .rightEyeContainGMini{
+    top: -78px;
+    left: 51px;
+  }
+  .rightEyeContainHMini{
+    top: -87px;
+    left: 3px;
+  }
+  .tentacleMini div{
+    height: 20px;
+    width: 2px;
+    top: 25%;
+    left: 50%;
+    font-size: 25px;
+  }
+  .tentacleMini div::before{
+    height: 6px;
+  }
+  .tentacle2Mini div{
+    height: 20px;
+    width: 2px;
+    top: 25%;
+    left: 50%;
+    font-size: 25px;
+  }
+  .tentacle2Mini div::before{
+    height: 10px;
+  }
+  .firstMini {
+    top: 58px;
+    left: 345px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+  }
+  
+  .secondMini {
+    top: 64px;
+    left: 345px;
+    -webkit-transform: rotate(-62deg);
+    transform: rotate(-62deg);
+  }
+  
+  .thirdMini {
+    top: 69px;
+    left: 345px;
+    -webkit-transform: rotate(-65deg);
+    transform: rotate(-65deg);
+  }
+  
+  .fourthMini {
+    top: 75px;
+    left: 345px;
+    -webkit-transform: rotate(-67deg);
+    transform: rotate(-67deg);
+  }
+  
+  .fifthMini {
+    left: 345px;
+    top: 98px;
+  }
+  
+  .sixthMini {
+    left: 345px;
+    top: 104px;
+    -webkit-transform: rotate(-122deg);
+    transform: rotate(-122deg);
+  }
+  
+  .seventhMini {
+    left: 345px;
+    top: 110px;
+    -webkit-transform: rotate(-125deg);
+    transform: rotate(-125deg);
+  }
+  
+  .eigthMini {
+    position: absolute;
+    left: 345px;
+    top: 116px;
+    z-index: -1;
+    -webkit-transform: rotate(-128deg);
+    transform: rotate(-128deg);
+  }

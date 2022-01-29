@@ -1,0 +1,33 @@
+
+  #blurPill {
+      background: black;
+    animation: blur 5s ease 0s infinite;
+    -webkit-animation: blur 5s ease 0s infinite;
+    -moz-animation: blur 5s ease 0s infinite;
+  }
+
+  
+  @keyframes blur {
+    0% {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+    }
+    100% {
+        opacity: 0;
+       -webkit-filter: blur(50px);
+      -moz-filter: blur(50px);
+      -o-filter: blur(50px);
+      -ms-filter: blur(50px); 
+    }
+  }
+  
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: url(blur.svg#blur);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  

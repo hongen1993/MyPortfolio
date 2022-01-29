@@ -1,0 +1,343 @@
+.worldOffice{
+    -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+          left: -39px;
+          top: -1.7vh;
+          height: 578px;
+          zoom: 2;
+      animation: worldOffice 5s ease 0s forwards;
+      -webkit-animation: worldOffice 5s ease 0s forwards;
+      -moz-animation: worldOffice 5s ease s forwards;
+  }
+  @keyframes worldOffice {
+    0%{
+    }100%{
+        height: 115px;
+        top: 170px;
+        left: 25px;
+        zoom: 3;
+  
+    }
+  }
+  .worldOfficeBack{
+    -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+    height: 115px;
+    top: 170px;
+    left: 25px;
+    zoom: 3;
+    animation: worldOfficeBack 5s ease 0s forwards;
+    -webkit-animation: worldOfficeBack 5s ease 0s forwards;
+    -moz-animation: worldOfficeBack 5s ease s forwards;
+  }
+  @keyframes worldOfficeBack {
+    0%{
+    }100%{
+        left: -39px;
+        top: -10px;
+        height: 578px;
+        zoom: 2;
+  
+    }
+  }
+.secondFloor{
+    position: absolute;
+    display: block;
+    background:linear-gradient(-45deg,rgba(1,178,0,0.6), rgba(0,0,0,1));
+    width: 77px;
+    height: 77px;
+    overflow: visible;
+    -webkit-transition: all 0.5s ease-out;
+	-webkit-transform:rotate3d(0,0,1,0deg) translate3d(0,0,26px);
+    -webkit-transform-style: preserve-3d;
+}
+.south17:hover .block17matrix{
+    display: none;
+}
+.openO{
+  display: none;
+  font-size: 1em;
+  top: 32%;
+  text-align: center;
+  color: #01FF00;
+  width: 100%;
+  cursor: pointer;
+}
+.south17:hover .openO{
+    display: block;
+}
+.south17{
+  height:50px;
+  width: 75px;
+  top: 24.5px;
+  background:linear-gradient(-45deg,rgba(1,178,0,0.6), rgba(0,0,0,1));
+  border: 1px solid #01FF00;
+-webkit-transform-origin:100% 100%;
+-webkit-transform:rotate3d(1,0,0,-90deg);
+}
+
+.south17 pre {
+color: #80FF00;
+text-shadow: 0 0 2px #60F000, 1px -1px 2px #60F000;
+font-weight: 400;
+font-size: .1rem;
+text-decoration: none;
+letter-spacing: 0rem;
+word-spacing: 0rem;
+padding: 0.1rem 0;
+writing-mode: vertical-rl;
+-webkit-text-orientation: upright;
+-moz-text-orientation: upright;
+text-orientation: upright;
+transform: translatey(-100%);
+animation: matrix linear 25s infinite;
+cursor:default;
+}
+
+.south17 pre:nth-child(5n+1) {
+animation-delay: 1s;
+animation-duration: 19s;
+}
+.south17 pre:nth-child(5n+2) {
+animation-delay: 1.33s;
+animation-duration: 48s;
+}
+.south17 pre:nth-child(5n+3) {
+animation-delay: -1s;
+animation-duration: 24s;
+}
+.south17 pre:nth-child(4n) {
+animation-delay: -2s;
+animation-duration: 38s;
+}
+
+.block-17 .north{
+  -webkit-transform-origin: 0% 100%;
+  -webkit-transform: rotate3d(1,0,0,-90deg);
+}
+.northEnter{
+  border: none;
+  animation: northOffice 3.5s ease .5s forwards;
+  -webkit-animation: northOffice 3.5s ease .5s forwards;
+  -moz-animation: northOffice 3.5s ease .5s forwards;
+  }
+  @keyframes northOffice {
+      0% {
+        }
+        100% {
+          background: url(/src/assets/img/office.png);
+          background-repeat: no-repeat;
+          background-size: 100% 50%;
+      }
+  }
+/* Enter Website Background Effect*/
+     
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.done{
+  height: 4vh;
+  width: 10vw;
+
+}
+.done a{
+  text-decoration:line-through;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-out;
+  display: none; 
+}
+.bg video{
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+}
+.bg-show{
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-show .bg {
+  display: block;
+}
+
+.bg-show .containerEffect a:hover::before {
+  transform: translate(-50%, -50%) scaleX(1);
+  transition: transform 0.2s 0.1s ease-out;
+}
+
+.opacity{
+  opacity: 0;
+}
+@media only screen and (min-width:1440px){
+  .worldOffice{
+    left: -21px;
+  }
+  @keyframes worldOffice{
+    0%{}100%{
+        height: 115px;
+        top: 30.45vh;
+        left: 54px;
+        zoom: 3;
+    }
+  }
+ .worldOfficeBack{
+   top: 30.45vh;
+   left: 54px;
+ }
+ @keyframes worldOfficeBack{
+  0%{}100%{
+      height: 578px;
+      top: -1.7vh;
+      left: -21px;
+      zoom: 2;
+  }
+}
+}
+@media only screen and (min-height:700px){
+  .worldOffice{
+    height:625px;
+    top: 6vh;
+    left: -20px;
+  }
+  @keyframes worldOffice{
+    0%{}100%{
+        height: 115px;
+        top: 28vh;
+        left: 54px;
+        zoom: 3;
+    }
+  }
+ .worldOfficeBack{
+   top: 28vh;
+   left: 54px;
+ }
+ @keyframes worldOfficeBack{
+  0%{}100%{
+      height: 625px;
+      top: 6vh;
+      left: -20px;
+      zoom: 2;
+  }
+}
+}
+
+@media only screen and (min-width:1920px){
+  .worldOffice{
+    left: 95px;
+  }
+  @keyframes worldOffice{
+    0%{}100%{
+        height: 81px;
+        top: 32vh;
+        left: 133.5px;
+        zoom: 3;
+    }
+  }
+ .worldOfficeBack{
+    height: 81px;
+    top: 32vh;
+    left: 133.5px;
+ }
+ @keyframes worldOfficeBack{
+  0%{}100%{
+      height: 625px;
+      top: 6vh;
+      left: 95px;
+      zoom: 2;
+  }
+}
+}
+@media only screen and (min-height:900px){
+  .worldOffice{
+    height:625px;
+    top: 10vh;
+    left: 95px;
+  }
+  @keyframes worldOffice{
+    0%{}100%{
+        height: 80px;
+        top: 29.5vh;
+        left: 133.5px;
+        zoom: 3;
+    }
+  }
+ .worldOfficeBack{
+   height: 80px;
+   top: 29.5vh;
+   left: 133.5px;
+ }
+ @keyframes worldOfficeBack{
+  0%{}100%{
+      height: 625px;
+      top: 10vh;
+      left: 95px;
+      zoom: 2;
+  }
+}
+}
+@media only screen and (min-height:1080px){
+  .worldOffice{
+    height:625px;
+    top: 13vh;
+    left: 103px;
+  }
+  @keyframes worldOffice{
+    0%{}100%{
+        height: 70px;
+        top: 29vh;
+        left: 133.5px;
+        zoom: 3;
+    }
+  }
+ .worldOfficeBack{
+  height: 70px;
+  top: 29vh;
+  left: 133.5px;
+  zoom: 3;
+ }
+ @keyframes worldOfficeBack{
+  0%{}100%{
+    height:625px;
+    top: 13vh;
+    left: 103px;
+    zoom: 2;
+  }
+}
+}
+@media only screen and (min-width:2560px){
+
+  .worldOffice{
+    height:300px;
+    top: 32vh;
+    left: 260px;
+  }
+  @keyframes worldOffice{
+    0%{}100%{
+        height: 56px;
+        top: 28.5vh;
+        left: 242px;
+        zoom: 3;
+    }
+  }
+ .worldOfficeBack{
+    height: 56px;
+    top: 28.5vh;
+    left: 242px;
+ }
+ @keyframes worldOfficeBack{
+  0%{}100%{
+    height:300px;
+    top: 32vh;
+    left: 260px;
+    zoom: 2;
+  }
+}
+}

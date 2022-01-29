@@ -1,0 +1,559 @@
+.smartphone{
+  cursor: pointer;
+  top: 44.5%;
+  left: 18%;
+  width: 220px;
+  height: 400px;
+  position: absolute;
+  perspective: 1000px;
+  margin-left: -110px;
+  transform: scale(.15);
+  z-index: 1;
+}
+.smartphoneOn{
+  z-index: 15;  
+  animation: scaleBig 1s linear 0s forwards;
+  -webkit-animation:scaleBig 1s linear 0s forwards;
+}
+@keyframes scaleBig{
+  0%{
+  }
+  100%{
+    transform: scale(1);
+    top: 36.5%;
+    left: 50%;
+    cursor: default;
+  }
+}
+.smartphoneOff{
+  transform: scale(1);
+  top: 36.5%;
+  left: 50%;
+  cursor: default;
+  z-index: 15;  
+  animation: scaleSmall 1s linear 1s forwards;
+  -webkit-animation:scaleSmall 1s linear 1s forwards;
+}
+@keyframes scaleSmall{
+  0%{
+  }90%{
+    z-index: 15;
+  }
+  100%{
+    top: 44.5%;
+    left: 18%;
+    transform: scale(.15);
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+.whole{
+  height: 400px;
+  width: 220px;
+  position: absolute;
+  transform-style: preserve-3d;
+  margin: auto;
+  transform-origin: 50% center;
+  transform: rotateY(0deg);
+}
+
+.test{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(62deg);
+}
+.testRotate{
+  transform: rotateX(0deg);
+}
+.test .topp{
+  display: block;
+  position: absolute;
+  border-radius: 9%;
+  margin: 0;
+  background: #111;
+  height: 15px;
+  width: 180px;
+  margin-left: 20px;
+  transform-style: preserve-3d;
+  transform-origin: center 0;
+  transform: rotateX(-90deg) translate3d(0,-15px, -0px);
+}
+
+.test .front{
+  display: block;
+  position: absolute;
+  border-radius: 9%;
+  margin: 0;
+  background: #111;
+  height: 400px;
+  width: 220px;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) translate3d(0,0,15px);
+}
+
+.front .camera{
+  height: 5%;
+  width: 44%;
+  top: 2.2%;
+  left: 28.7%;
+  z-index: 3;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #111;
+}
+.front .innerFront{
+  width: 98% ;
+  height: 98% ;
+  transform-style: preserve-3d;
+  background: #888;
+  transform: translateX(1%) translateY(1%);
+  box-shadow: 0px 0px 3px 1px rgba(20,20,20,0.5),
+              0px 2px 3px 2px rgba(20,20,20,0.5) inset;
+  border-radius: 9%;
+}
+
+.innerFront .face{
+  height: 94%;
+  width: 89%;
+  top:-5%;
+  left: 0%;
+  border-radius: 15px ;
+  background: rgba(30,30,30,0.6);
+  transform: translateY(2.5%) translateX(6%);
+}
+.innerFront .faceOn{
+  animation: changeScreen 2s linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.innerFront .innerInnerFront{
+  width: 98%;
+  height: 99%;
+  background-color: #111;
+  transform: translateX(1%) translateY(.5%);
+  border-radius: 9%;
+  max-width: 257px;
+  -webkit-box-shadow: 0px 10px 25px rgba(51, 51, 51, 0.3);
+  -moz-box-shadow: 0px 10px 25px rgba(51, 51, 51, 0.3);
+  box-shadow: 0px 10px 25px rgba(51, 51, 51, 0.3);
+}
+
+ .test .l-side{
+  display: block;
+  position: absolute;
+  border-radius: 9%;
+  margin: 0;
+  background-color: #111;
+  height: 355px;
+  width: 15px;
+  margin-top: 25px;
+  transform: rotateY(-90deg) translate3d(0px,0px,-2px);
+  transform-origin: left;
+}
+
+.test .r-side{
+  display: block;
+  position: absolute;
+  border-radius: 9%;
+  margin: 0;
+  background-color: #111;
+  height: 355px ;
+  width: 15px ;
+  margin-top: 25px ;
+  transform-style: preserve-3d;
+  transform: rotateY(90deg) translate3d(0px,0px,203px);
+  transform-origin: right;
+}
+
+.test .back{
+  display: block;
+  position: absolute;
+  border-radius: 9%;
+  margin: 0;
+  background-color: #111;
+  height: 400px;
+  width: 220px;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) translate3d(0,0,-0px); 
+}
+
+.bottomP{
+  display: block;
+  position: absolute;
+  border-radius: 9%;
+  margin: 0;
+  background: #111;
+  height: 15px ;
+  width: 180px ;
+  margin-left: 20px ;
+  transform-style: preserve-3d;
+  transform-origin: center 0;
+  transform: rotateX(90deg) translate3d(0, 0px, -400px);
+}
+@keyframes changeScreen{
+  0%{
+    background-color: #444;
+  }
+  100%{
+    background-color: white;
+    background: url(/src/assets/img/smartphone/mobileWallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.menuButtons{
+  position: absolute;
+  width: 90%;
+  top: 89%;
+  left: -.25%;
+  text-align: center;
+  background-color: rgba(255,255,255,0.7);
+  margin: .7em;
+  border-bottom-left-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
+  z-index: 99;
+}
+.menuButtonsDark{
+  background-color: black;
+}
+.menuButtons button{
+  background-color: rgba(255,255,255,0.1);
+  color: #3A3B3C;
+  margin: 0em 1em;
+}
+.menuButtonsDark button{
+  background-color:black;
+  color: rgba(255,255,255,0.7);
+  margin: 0em 1em;
+}
+#buttonBack{
+  font-size: 1.3em;
+  transform: rotate(270deg);
+  margin: 0em .5em;
+  cursor: pointer;
+
+}
+#buttonHome{
+  cursor: pointer;
+}
+/* smartphone aplications */
+
+.face .phone{
+  position: absolute;
+  cursor:pointer;
+  top: 85%;
+  left: 15%;
+  font-size: 1.5em;
+  background: transparent;
+}
+.phone img{
+  height: 1em;
+  width: 1em;
+  border-radius: .3em;
+}
+.face .messages{
+  position: absolute;
+  cursor:pointer;
+  width: 1.15em;
+  top: 85.2%;
+  left: 68%;
+  font-size: 1.6em;
+  color: orange;
+  background: transparent;
+  transform: rotate(0deg);
+}
+.face .chrome{
+  position: absolute;
+  cursor:pointer;
+  top: 85%;
+  left: 42.5%;
+  font-size: 1.5em;
+  background: transparent;
+}
+.chrome img{
+  height: 1em;
+  width: 1em;
+  border-radius: .2em;
+}
+
+.face .whatsappBP{
+  position: absolute;
+  cursor:pointer;
+  width: 1.15em;
+  top: 8.7%;
+  left: 77.5%;
+  font-size: 1.2em;
+  color: white;
+  background: green;
+  border-radius: 0.3em;
+}
+.face .wechat{
+  position: absolute;
+  cursor:pointer;
+  top: 8.5%;
+  left: 32.5%;
+  font-size: 1.6em;
+  background: transparent;
+}
+.wechat img{
+  height: 1em;
+  width: 1em;
+  border-radius:.2em ;
+}
+.face .instagram{
+  position: absolute;
+  cursor:pointer;
+  top: 8.5%;
+  left: 10%;
+  font-size: 1.6em;
+  background: transparent;
+}
+.instagram img{
+  height: 1em;
+  width: 1em;
+}
+.face .calculator{
+  position: absolute;
+  cursor:pointer;
+  top: 8.5%;
+  left: 55%;
+  font-size: 1.6em;
+  background: transparent;
+}
+.calculator img{
+  height: 1em;
+  width: 1em;
+}
+.face .music{
+  position: absolute;
+  cursor:pointer;
+  top: 20.5%;
+  left: 10%;
+  font-size: 1.5em;
+  background: transparent;
+}
+.music img{
+  height: 1em;
+  width: 1em;
+  border-radius: .3em;
+}
+.smartphoneBack{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  cursor:zoom-out;
+}
+.smartphoneTop{
+  position: absolute;
+  height: 6%;
+  width: 100.5%;
+  left: -.25%;
+  border-top-left-radius:0.4em;
+  border-top-right-radius:0.4em;
+}
+
+.callO{
+  position: absolute;
+  height: 97%;
+  width: 100%;
+  top: 4%;
+  background: url(/src/assets/img/smartphone/callme.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+  z-index: 1;
+}
+.wechatO{
+  height: 95%;
+  width: 100%;
+  top: 4%;
+  background: url(/src/assets/img/smartphone/wechatO.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+.chromeO{
+  height: 95%;
+  width: 100%;
+  top: 4%;
+  background: url(/src/assets/img/smartphone/chromeO.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+}
+.callMe{
+  position: absolute;
+  height: 8.5%;
+  width: 18%;
+  top: 83%;
+  left: 42%;
+  border-radius: 1px;
+}
+.clock {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  transform: translateX(-50%) translateY(-50%);
+  color: black;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.clockOff{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.wifi{
+  width: 6%;
+  top: -10%;
+  left: 75%;
+}
+.wifi img{
+  height: 6%;
+  width: 100%;
+}
+.fa-stack{
+  height: 100% !important;
+  width: 6% !important;
+  top: -20% !important;
+  left: 76% !important;
+  vertical-align: top !important;
+  line-height: 0.5em !important;
+}
+.fa-signal:before{
+  font-size: .4em;
+}
+.fa-slash{
+  position: absolute;
+  left: 0%;
+}
+.fa-slash::before{
+  font-size: .5em;
+}
+.batery{
+  width: 6%;
+  left: 75%;
+}
+.batery img{
+  height: 6%;
+  width: 100%;
+}
+@media only screen and (min-width:1440px){
+  .smartphone{
+    top: 47%;
+  }
+  @keyframes scaleBig{
+    0% {
+    }
+    100% {
+        transform: scale(1);
+        top: 36.5%;
+        left: 50%;
+        cursor: default;
+    }
+  }
+  .smartphoneOff{
+    top: 36.5%;
+  }
+  @keyframes scaleSmall{
+    0%{}90%{
+      z-index: 15;
+    }100%{
+      top: 47%;
+      left: 18%;
+      transform: scale(.15);
+      cursor: pointer;
+      z-index: 1;    }
+  }
+  .clockOff{
+    top: 20%;
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width:1920px){
+  .smartphone{
+    top: 51%;
+    transform: scale(.24);
+  }
+  @keyframes scaleBig{
+    0% {
+    }
+    100% {
+        transform: scale(1.5);
+        top: 36.5%;
+        left: 50%;
+        cursor: default;
+    }
+  }
+  .smartphoneOff{
+    top: 36.5%;
+    transform: scale(1.5);
+
+  }
+  @keyframes scaleSmall{
+    0%{}90%{
+      z-index: 15;
+    }100%{
+      top: 51%;
+      left: 18%;
+      transform: scale(.24);
+      cursor: pointer;
+      z-index: 1;    }
+  }
+  .clockOff{
+    top: 20%;
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width:2560px){
+  .modal-contentB{
+    top: 19%;
+    left: 28.5%;
+    transform: scale(0.5);
+  }
+  .closeB{
+    top: 1em;
+    left: 95%;
+  }
+  .smartphone{
+    top: 54%;
+    transform: scale(0.3);
+  }
+  @keyframes scaleSmall{
+    0%{}90%{
+      z-index: 15;
+    }100%{
+      top: 54%;
+      left: 18%;
+      transform: scale(.3);
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+  @keyframes scaleBig{
+    0%{}100%{
+      transform:scale(2);
+      top: 35.5%;
+      left: 50%;
+      cursor: default;
+    }
+  }
+  .smartphoneOff{
+    top: 35.5%;
+    left: 50%;
+    transform: scale(2);
+  }
+}

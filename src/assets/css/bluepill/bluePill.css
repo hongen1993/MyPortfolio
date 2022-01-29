@@ -1,0 +1,4390 @@
+body
+{
+    background: black;
+ 	-webkit-transform-style: preserve-3d;
+    -webkit-perspective: 1000; 
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    left: 1%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, 
+input, label, button, textarea, ul, li, label
+{ position:relative; vertical-align:top; display:inline-block; padding:0; margin:0; }
+
+* 
+{
+	-webkit-user-select: none;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+.bodyAdd{
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 1000;
+}
+#noneDisplay{
+    display: none;
+}
+.world
+{	
+	float:left;
+	zoom:0;
+	position:absolute;
+	left:11%;
+	top:-18vh;
+	width:100vw;
+	height:50vh;
+	-webkit-transform-style: preserve-3d;
+    -webkit-transform: rotate3d(1,0,0,0deg) rotate3d(0,0,1,0deg);
+     animation: enterM 20s ease 9s forwards;
+    -webkit-animation: enterM 20s ease 9s forwards;
+    -moz-animation: enterM 20s ease 9s forwards; 
+  }
+      
+
+.ground
+{   background:linear-gradient(-45deg,rgba(1,178,0,0.2), rgba(0,0,0,1));
+    border: 5px solid #01FF00;
+    width:0%;
+	height:0%;
+    position:relative;
+	display:block;
+	top:-25%;
+	left:-60%;
+	overflow:visible;
+	-webkit-transform: translate3d(0,0,-1px);
+	-webkit-transform-style: preserve-3d;
+}
+.groundExpand{
+    width:200%;
+	height:175%;
+}
+/* buildings */
+.building
+{
+    position:absolute;
+	display:block;
+	top:50vh;
+	left:50vw;
+    background:linear-gradient(-45deg,rgba(1,178,0,1), rgba(0,0,0,1));
+	width:52px;
+	height:50px;
+	overflow:visible;
+    -webkit-transition: all 0.5s ease-out;
+	-webkit-transform: rotate3d(0,0,1,0deg);
+    -webkit-transform-style: preserve-3d;
+}
+	.block-1
+	{
+		top:210%;
+		left:62vw;
+		-webkit-transform: scaleZ(2.7);
+	}
+	.block-2
+	{
+		top:180%;
+		left:62vw;
+		-webkit-transform: scaleZ(2.5);
+	}
+	.block-3
+	{
+		top:150%;
+		left:66vw;
+		-webkit-transform: scaleZ(2.2);
+	}
+	.block-4
+	{
+		top:90%;
+		left:68vw;
+		-webkit-transform: scaleZ(2);
+	}
+	.block-5
+	{
+		top:60%;
+		left:62vw;
+		-webkit-transform: scaleZ(2.7);
+	}
+	.block-6
+	{
+		top:30%;
+		left:62vw;
+		-webkit-transform: scaleZ(3.1);
+	}
+	.block-7
+	{
+		top:210%;
+		left:91vw;
+		-webkit-transform: scaleZ(2.8);
+	}
+	.block-8
+	{
+		top:180%;
+		left:91vw;
+		-webkit-transform: scaleZ(2.6);
+	}
+	.block-9
+	{
+		top:150%;
+		left:91vw;
+		-webkit-transform: scaleZ(2.8);
+	}
+	.block-10
+	{
+		top:120%;
+		left:91vw;
+		-webkit-transform: scaleZ(3.1);
+        animation: block-10 5s ease 19s forwards;
+        -webkit-animation: block-10 5s ease 19s forwards;
+        -moz-animation: block-10 5s ease 19s forwards;
+      }
+       @keyframes block-10{
+          0% {
+        }100%{
+            top:132%;
+        }    
+    }
+	.block-11
+	{
+		top:90%;
+		left:91vw;
+		-webkit-transform: scaleZ(3.2);
+    }
+    
+    .block-12
+	{
+		top:60%;
+		left:91vw;
+		-webkit-transform: scaleZ(3.3);
+    }
+    .block-13
+	{
+		top:30%;
+		left:91vw;
+		-webkit-transform: scaleZ(2.4);
+    }
+    .block-14
+	{
+		top:210%;
+		left:10vw;
+		-webkit-transform: scaleZ(2);
+    }
+    .block-15
+	{
+		top:180%;
+		left:10vw;
+		-webkit-transform: scaleZ(2.4);
+    }
+    .block-16
+	{
+		top:150%;
+		left:5vw;
+		-webkit-transform: scaleZ(2.7);
+    }
+    .block-17
+	{
+		top:90%;
+		left:3vw;
+		-webkit-transform: scaleZ(2.1);
+    }
+    .block-18
+	{
+		top:60%;
+		left:10vw;
+		-webkit-transform: scaleZ(2.3);
+    }
+    .block-19
+	{
+		top:30%;
+		left:10vw;
+		-webkit-transform: scaleZ(2.7);
+    }
+    .block-20
+	{
+		top:210%;
+		left:-20vw;
+		-webkit-transform: scaleZ(3);
+    }
+    .block-21
+	{
+		top:180%;
+		left:-20vw;
+		-webkit-transform: scaleZ(2.8);
+    }   
+    .block-22
+	{
+		top:150%;
+		left:-20vw;
+		-webkit-transform: scaleZ(3.1);
+    }  
+     .block-23
+	{
+		top:120%;
+		left:-20vw;
+		-webkit-transform: scaleZ(2.9);
+        animation: block-23 5s ease 19s forwards;
+        -webkit-animation: block-23 5s ease 19s forwards;
+        -moz-animation: block-23 5s ease 19s forwards;
+      }
+       @keyframes block-23{
+          0% {
+        }100%{
+            top:132%;
+        }    
+    }
+     .block-24
+	{
+		top:90%;
+		left:-20vw;
+		-webkit-transform: scaleZ(3.1);
+    }  
+     .block-25
+	{
+		top:60%;
+		left:-20vw;
+		-webkit-transform: scaleZ(3.2);
+    }
+    .block-26
+	{
+		top:30%;
+		left:-20vw;
+		-webkit-transform: scaleZ(2.4);
+    }
+    .block-27
+	{
+		top:65%;
+		left:31.5vw;
+        -webkit-transform: scaleZ(2.6);
+        width: 70px;
+        height: 70px;
+        animation: block-27 5s ease 19s forwards;
+        -webkit-animation: block-27 5s ease 19s forwards;
+        -moz-animation: block-27 5s ease 19s forwards;
+        color: #01FF00;
+        font-size: 0.35em;
+      }
+       @keyframes block-27 {
+          0% {
+        }100%{
+            top:75%;
+            left: 19.8vw;
+            width: 152px; 
+            height: 110px;
+           }    
+    }
+    .block-28
+	{
+		top:30%;
+		left:35.5vw;
+		-webkit-transform: scaleZ(2.7);
+        animation: road-28 5s ease 19s forwards;
+        -webkit-animation: road-28 5s ease 19s forwards;
+        -moz-animation: road-28 5s ease 19s forwards;
+      }
+       @keyframes block-28{
+          0% {
+        }100%{
+            top:43%;
+                }    
+    }
+
+/* .building:hover
+{
+	-webkit-transform: rotate3d(0,0,1,900deg) scale3d(1, 1, 4);
+	background:#0ae;
+}
+	.building:hover>li
+	{
+		background:#0ae;
+		opacity:.5;
+	}
+.building:active
+{
+	-webkit-transform: translateZ(50px) scale3d(1, 1, 4);
+	background:#09c;
+}
+	.building:active>li
+	{
+		background:#09c;
+		opacity:.75;
+	}
+ */
+.building>li
+{
+	display:inline-block;
+    position:absolute;
+    -webkit-transition: all 0.3s ease-out;
+}
+.building .top
+{
+    background:linear-gradient(-45deg,rgba(1,178,0,1), rgba(0,0,0,1));
+    border: 1px solid #01FF00;
+    width:50px;
+    height:50px;
+	-webkit-transform: translate3d(0,0,52px);
+}
+
+.building .west
+{
+    background:linear-gradient(-45deg,rgba(1,178,0,0.6), rgba(0,0,0,1));
+    border: 1px solid #01FF00;
+	width:50px;
+	height:50px;
+	-webkit-transform-origin:0 0;
+	-webkit-transform: rotate3d(1,1,1,120deg);
+}
+.building .east
+{
+    background:linear-gradient(-45deg,rgba(1,178,0,0.6), rgba(0,0,0,1));
+    border: 1px solid #01FF00;
+	width:50px;
+	height:50px;
+	-webkit-transform-origin:100% 0;
+	-webkit-transform:rotate3d(-1,1,1,-120deg);
+}
+.building .north
+{
+    background:linear-gradient(-45deg,rgba(1,178,0,0.6), rgba(0,0,0,1));
+    border: 1px solid #01FF00;
+	width:50px;
+	height:50px;
+	-webkit-transform-origin:0 0;
+	-webkit-transform:rotate3d(1,0,0,90deg);
+}
+.building .south
+{
+    background:linear-gradient(-45deg,rgba(1,178,0,0.6), rgba(0,0,0,1));
+    border: 1px solid #01FF00;
+    width:50px;
+	height:50px;
+	-webkit-transform-origin:100% 100%;
+	-webkit-transform:rotate3d(1,0,0,-90deg);
+}
+/* road */
+.road
+{
+	font-size:0;
+    position:absolute;
+	display:block;
+	top:50%;
+	left:50%;
+    background:linear-gradient(90deg,rgba(1,178,0,0.9), rgba(0,0,0,1));
+	width:350px;
+	height:30px;
+	overflow:visible;
+    -webkit-transition: all 0.5s ease-out;
+	-webkit-transform: rotate3d(0,0,1,0deg);
+	-webkit-transform-style: preserve-3d;
+}
+	.road-1
+	{
+        width:5.5vw;
+	    height:55vh;
+		top:153.5%;
+		left:36vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg) translate3d(0,0px,-2px);
+	    animation: road-1 5s ease 19s forwards;
+    -webkit-animation: road-1 5s ease 19s forwards;
+    -moz-animation: road-1 5s ease 19s forwards;
+  }
+   @keyframes road-1 {
+      0% {
+    }100%{
+        top: 170.5%;
+        height: 46vh;
+    }
+      } 
+	.road-2
+	{
+        width:5.5vw;
+	    height:55vh;
+		top:153.5%;
+		left:45vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg) translate3d(0,0px,-2px);
+	    animation: road-2 5s ease 19s forwards;
+    -webkit-animation: road-2 5s ease 19s forwards;
+    -moz-animation: road-2 5s ease 19s forwards;
+  }
+   @keyframes road-2 {
+      0% {
+    }100%{
+        top: 170.5%;
+        height: 46vh;
+    }    
+}
+    .road-3
+	{
+        width:1vw;
+	    height:70vh;
+		top:156%;
+		left:41vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-4px);
+        animation: road-3 5s ease 19s forwards;
+        -webkit-animation: road-3 5s ease 19s forwards;
+        -moz-animation: road-3 5s ease 19s forwards;
+      }
+       @keyframes road-3 {
+          0% {
+        }100%{
+            top:197%;
+        }    
+    }
+    .road-4
+	{
+        width:1vw;
+	    height:70vh;
+		top:146%;
+		left:41vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-4px);
+        animation: road-4 5s ease 19s forwards;
+        -webkit-animation: road-4 5s ease 19s forwards;
+        -moz-animation: road-4 5s ease 19s forwards;
+      }
+       @keyframes road-4 {
+          0% {
+        }100%{
+            top:195%;
+        }    
+    }
+    .road-5
+	{
+        width:1vw;
+	    height:70vh;
+		top:125%;
+		left:41vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-4px);
+        animation: road-5 5s ease 19s forwards;
+        -webkit-animation: road-5 5s ease 19s forwards;
+        -moz-animation: road-5 5s ease 19s forwards;
+      }
+       @keyframes road-5 {
+          0% {
+        }100%{
+            top:167%;
+        }    
+    }
+    .road-6
+	{
+        width:1vw;
+	    height:70vh;
+		top:116%;
+		left:41vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-4px);
+        animation: road-6 5s ease 19s forwards;
+        -webkit-animation: road-6 5s ease 19s forwards;
+        -moz-animation: road-6 5s ease 19s forwards;
+      }
+       @keyframes road-6 {
+          0% {
+        }100%{
+            top:165%;
+        }    
+    }
+    .road-7
+	{
+        width:1vw;
+	    height:70vh;
+		top:96%;
+		left:41vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-4px);
+        animation: road-7 5s ease 19s forwards;
+        -webkit-animation: road-7 5s ease 19s forwards;
+        -moz-animation: road-7 5s ease 19s forwards;
+      }
+       @keyframes road-7 {
+          0% {
+        }100%{
+            top:137%;
+        }    
+    }
+    .road-8
+	{
+        width:1vw;
+	    height:70vh;
+		top:86%;
+		left:41vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-4px);
+        animation: road-8 5s ease 19s forwards;
+        -webkit-animation: road-8 5s ease 19s forwards;
+        -moz-animation: road-8 5s ease 19s forwards;
+      }
+       @keyframes road-8 {
+          0% {
+        }100%{
+            top:135%;
+        }    
+    }
+    .road-9
+	{
+        width:5.5vw;
+	    height:23vh;
+		top:107.5%;
+		left:5.5vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-3px);
+        animation: road-9 5s ease 19s forwards;
+        -webkit-animation: road-9 5s ease 19s forwards;
+        -moz-animation: road-9 5s ease 19s forwards;
+      }
+       @keyframes road-9 {
+          0% {
+        }100%{
+            top:120%;
+        }    
+    }
+    .road-10
+	{
+        width:5.5vw;
+	    height:23vh;
+		top:107.5%;
+		left:75.5vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-3px);
+        animation: road-10 5s ease 19s forwards;
+        -webkit-animation: road-10 5s ease 19s forwards;
+        -moz-animation: road-10 5s ease 19s forwards;
+      }
+       @keyframes road-10 {
+          0% {
+        }100%{
+            top:120%;
+        }    
+    }
+    .road-11
+	{
+        width:5.5vw;
+	    height:93.5vh;
+		top:39.5%;
+		left:0vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg)translate3d(0,0px,-2px);
+        animation: road-11 5s ease 19s forwards;
+        -webkit-animation: road-11 5s ease 19s forwards;
+        -moz-animation: road-11 5s ease 19s forwards;
+      }
+       @keyframes road-11 {
+          0% {
+        }100%{
+            height: 110vh;
+            top: 42.5%;
+            left: -2.5vw;
+        }    
+    }
+    .road-12
+	{
+        width:5.5vw;
+	    height:93.5vh;
+		top:39.5%;
+		left:81.5vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg) translate3d(0,0px,-2px);
+        animation: road-12 5s ease 19s forwards;
+        -webkit-animation: road-12 5s ease 19s forwards;
+        -moz-animation: road-12 5s ease 19s forwards;
+      }
+       @keyframes road-12 {
+          0% {
+        }100%{
+            height: 110vh;
+            top: 42.5%;
+            left: 83.5vw;
+        }    
+    }
+    .road-13
+	{
+        width:10vw;
+	    height:11vh;
+		top:84%;
+		left:37.8vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg);
+        animation: road-13 5s ease 19s forwards;
+        -webkit-animation: road-13 5s ease 19s forwards;
+        -moz-animation: road-13 5s ease 19s forwards;
+      }
+       @keyframes road-13 {
+          0% {
+        }100%{
+            height: 20vh;
+            top:83.5%;
+        }
+    }
+    .road-14
+	{
+        width:0.7vw;
+	    height:8vh;
+		top:89.5%;
+		left:35.1vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg);
+        animation: road-14 5s ease 19s forwards;
+        -webkit-animation: road-14 5s ease 19s forwards;
+        -moz-animation: road-14 5s ease 19s forwards;
+      }
+       @keyframes road-14 {
+          0% {
+        }100%{
+            height: 21vh;
+            top: 184%;
+            left: 18.1vw;
+        }    
+    }
+    .road-15
+	{
+        width:.7vw;
+	    height:8vh;
+		top:89.5%;
+		left:49.3vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg);
+        animation: road-15 5s ease 19s forwards;
+        -webkit-animation: road-15 5s ease 19s forwards;
+        -moz-animation: road-15 5s ease 19s forwards;
+      }
+       @keyframes road-15 {
+          0% {
+        }100%{
+            height: 21vh;
+            top: 184%;
+            left: 69.5vw;
+        }    
+    }
+	.road-16
+	{
+        width:1.5vw;
+	    height:35vh;
+		top:64%;
+		left:75.6vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-3px);
+        animation: road-16 5s ease 19s forwards;
+        -webkit-animation: road-16 5s ease 19s forwards;
+        -moz-animation: road-16 5s ease 19s forwards;
+      }
+       @keyframes road-16 {
+          0% {
+        }100%{
+            height: 30vh;
+            top:71%;
+            left: 72.5vw;
+        }    
+    }
+    .road-17
+	{
+        width:1.5vw;
+	    height:35vh;
+		top:64%;
+		left:8vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-3px);
+        animation: road-17 5s ease 19s forwards;
+        -webkit-animation: road-17 5s ease 19s forwards;
+        -moz-animation: road-17 5s ease 19s forwards;
+      }
+       @keyframes road-17 {
+          0% {
+        }100%{
+            height: 30vh;
+            top:71%;
+            left: 11.3vw;
+        }    
+    }
+    .road-18
+	{
+        width:1vw;
+	    height:29.5vh;
+		top:40%;
+		left:28vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg)translate3d(0,0px,-4px);
+        animation: road-18 5s ease 19s forwards;
+        -webkit-animation: road-18 5s ease 19s forwards;
+        -moz-animation: road-18 5s ease 19s forwards;
+      }
+       @keyframes road-18{
+          0% {
+        }100%{
+            height: 18.5vh;
+            top: 33%;
+            left: 17vw;
+        }    
+    }
+    .road-19
+	{
+        width:1vw;
+	    height:29.5vh;
+		top:20vh;
+		left:113%;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg)translate3d(0,0px,-4px);
+        animation: road-19 5s ease 19s forwards;
+        -webkit-animation: road-19 5s ease 19s forwards;
+        -moz-animation: road-19 5s ease 19s forwards;
+      }
+       @keyframes road-19{
+          0% {
+        }100%{
+            height: 18.5vh;
+            top: 33%;
+            left: 68.5vw;
+                }    
+    }
+    .road-20
+	{
+        width:1vw;
+	    height:68vh;
+		top:-28%;
+		left:46vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-4px);
+        animation: road-20 5s ease 19s forwards;
+        -webkit-animation: road-20 5s ease 19s forwards;
+        -moz-animation: road-20 5s ease 19s forwards;
+      }
+       @keyframes road-20{
+          0% {
+        }100%{
+            height: 68vh;
+            top:-26%;
+            left: 46vw;
+        }    
+    }
+    .road-21
+	{
+        width:1vw;
+	    height:25vh;
+		top:44%;
+		left:9.5vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-4px);
+        animation: road-21 5s ease 19s forwards;
+        -webkit-animation: road-21 5s ease 19s forwards;
+        -moz-animation: road-21 5s ease 19s forwards;
+      }
+       @keyframes road-21 {
+          0% {
+        }100%{
+            height: 25vh;
+            top: 47%;
+            left: 1.5vw;
+        }    
+    }
+    .road-22
+	{
+        width:1vw;
+	    height:25vh;
+		top:44%;
+		left:75vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,90deg) translate3d(0,0px,-4px);
+        animation: road-22 5s ease 19s forwards;
+        -webkit-animation: road-22 5s ease 19s forwards;
+        -moz-animation: road-22 5s ease 19s forwards;
+      }
+       @keyframes road-22 {
+          0% {
+        }100%{
+            height: 25vh;
+            top: 47%;
+            left: 83.5vw;
+        }    
+    }
+    .road-23
+	{
+        width:1vw;
+	    height:25vh;
+		top:103%;
+		left:11vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg) translate3d(0,0px,-4px);
+        animation: road-23 5s ease 19s forwards;
+        -webkit-animation: road-23 5s ease 19s forwards;
+        -moz-animation: road-23 5s ease 19s forwards;
+      }
+       @keyframes road-23 {
+          0% {
+        }100%{
+            height: 36vh;
+            top:92%;
+        }    
+    }
+    .road-24
+	{
+        width:1vw;
+	    height:25vh;
+		top:103%;
+		left:75vw;
+		-webkit-transform:translateZ(.9px) rotate3d(0,0,1,0deg) translate3d(0,0px,-4px);
+        animation: road-24 5s ease 19s forwards;
+        -webkit-animation: road-24 5s ease 19s forwards;
+        -moz-animation: road-24 5s ease 19s forwards;
+      }
+       @keyframes road-24 {
+          0% {
+        }100%{
+            height: 36vh;
+            top:92%;
+        }    
+    }
+/* building 27 */
+.building .top-27
+{
+    background:linear-gradient(-45deg,rgba(1,178,0,1), rgba(0,0,0,1));
+    border: 1px solid #01FF00;
+    width:70px;
+    height:70px;
+	-webkit-transform: translate3d(0,0,72px);
+    animation: building-xpandT 5s ease 19s forwards;
+    -webkit-animation: building-xpandT 5s ease 19s forwards;
+    -moz-animation: building-xpandT 5s ease 19s forwards;
+  }
+        @keyframes building-xpandT {
+      0% {
+    }100%{
+        -webkit-transform: translate3d(0,0,112px);
+/*         -webkit-transform: translate3d(0,0,0px);
+ */        width: 150px;
+        height: 110px;
+    }     
+}
+
+.building .west-27
+{
+    background:linear-gradient(-45deg,rgba(1,178,0,0.6), rgba(0,0,0,1));
+    border: 1px solid #01FF00;
+    width:70px;
+    height:70px;
+    -webkit-transform-origin:0 0;
+    -webkit-transform: rotate3d(0,1,0,-90deg);
+    /*-webkit-transform: rotate3d(-1,1,-1,-120deg);*/
+    animation: building-xpandWest 5s ease 19s forwards;
+    -webkit-animation: building-xpandWest 5s ease 19s forwards;
+    -moz-animation: building-xpandWest 5s ease 19s forwards;
+}
+@keyframes building-xpandWest {
+    0% {
+  }100%{
+      width: 110px;
+      height: 110px;
+  }     
+}
+
+.building .east-27
+{
+    background:linear-gradient(-45deg,rgba(1,178,0,0.6), rgba(0,0,0,1));
+    border: 1px solid #01FF00;
+    width:70px;
+    height:70px;
+    -webkit-transform-origin:100% 0;
+    -webkit-transform: rotate3d(0,1,0,90deg);
+/*     -webkit-transform: rotate3d(-1,-1,1,-120deg);
+ */    animation: building-xpandEast 5s ease 19s forwards;
+    -webkit-animation: building-xpandEast 5s ease 19s forwards;
+    -moz-animation: building-xpandEast 5s ease 19s forwards;
+}
+@keyframes building-xpandEast {
+    0% {
+  }100%{
+      width: 110px;
+      height: 110px;
+      left:39px;
+  }     
+}
+
+.building .north-27
+{
+    background:linear-gradient(-45deg,rgba(1,178,0,0.6), rgba(0,0,0,1));
+    border: 1px solid #01FF00;
+    width:70px;
+    height:70px;
+	-webkit-transform-origin:0 0;
+    -webkit-transform: rotate3d(1,0,0,-270deg);
+    animation: building-xpand 5s ease 19s forwards;
+    -webkit-animation: building-xpand 5s ease 19s forwards;
+    -moz-animation: building-xpand 5s ease 19s forwards;
+}
+@keyframes building-xpand {
+    0% {
+  }100%{
+      width: 150px;
+      height: 110px;
+  }     
+} 
+.building .south-27
+{
+    background: rgba(0,0,0,0.7);
+    border: 1px solid #01FF00;
+    width: 70px;
+    height: 70px;
+    -webkit-transform-origin:100% 100%;
+    -webkit-transform:rotate3d(1,0,0,-90deg);
+    /*    -webkit-transform:rotate3d(1,0,0,0deg);*/
+    animation: building-xpandSouth 5s ease 19s forwards;
+    -webkit-animation: building-xpandSouth 5s ease 19s forwards;
+    -moz-animation: building-xpandSouth 5s ease 19s forwards;
+}
+@keyframes building-xpandSouth {
+    0% {
+  }100%{
+      width: 150px;
+      height: 110px;
+  }     
+} 
+/* fountain */
+.fountain
+{
+	font-size:0;
+    position:absolute;
+	display:block;
+	top:116%;
+    left:32.2vw;
+    -webkit-border-radius: 35px; 
+    -moz-border-radius: 35px; 
+    border-radius:35px; 
+    background:rgba(1,178,0,0.6);
+	width:70px;
+	height:70px;
+	overflow:visible;
+    -webkit-transition: all 0.5s ease-out;
+	-webkit-transform: rotate3d(0,0,1,0deg);
+	-webkit-transform-style: preserve-3d;
+    animation: fountain 5s ease 19s forwards;
+    -webkit-animation: fountain 5s ease 19s forwards;
+    -moz-animation: fountain 5s ease 19s forwards;
+  }
+   @keyframes fountain {
+      0% {
+    }100%{
+        top: 64.8vh;
+        }    
+}
+.fountain .block-1
+{
+    top:105vh;
+    left:60vw;
+    -webkit-transform: scaleZ(3.2);
+}
+.fountain .top
+{
+    -webkit-border-radius: 35px; 
+    -moz-border-radius: 35px; 
+    border-radius:35px; 
+    background:rgba(1,178,0,0.2);
+    border: 1px solid #01FF00;
+    width:70px;
+    height:70px;
+	-webkit-transform: translate3d(0,0,12px);
+}
+
+.fountain .west
+{
+    
+    background:rgba(1,178,0,0);
+    top: -10.5vh;
+    left: .5vw;
+	width:30px;
+	height:12px;
+	-webkit-transform-origin:0 0;
+	-webkit-transform: rotate3d(1,1,1,120deg);
+}
+.fountain .east
+{
+    background:rgba(1,178,0,0);
+    top: -12.5vh;
+    left: 16vw;
+	width:12px;
+	height:30px;
+	-webkit-transform-origin:100% 0;
+	-webkit-transform:rotate3d(0,1,0,90deg);
+}
+.fountain .north
+{
+    background:rgba(1,178,0,0);
+    top: -12vh;
+    left: -1vw;
+	width:30px;
+	height:12px;
+	-webkit-transform-origin:0 0;
+	-webkit-transform:rotate3d(1,0,0,90deg);
+}
+.fountain .south
+{
+    background:rgba(1,178,0,0);
+    top:-5.5vh;
+    left:1.8vw;
+    width:30px;
+	height:12px;
+	-webkit-transform-origin:100% 100%;
+	-webkit-transform:rotate3d(1,0,0,-90deg);
+}
+.fountain .westB
+{
+    
+    background:rgba(1,178,0,0);
+    top: -4vh;
+    left: -7vw;
+	width:12px;
+	height:20px;
+	-webkit-transform-origin:0 0;
+    -webkit-transform:rotate3d(350,-160,335,146deg);
+}
+.fountain .eastB
+{
+    background:rgba(1,178,0,0);
+    top: -19.5vh;
+    left: 4vw;
+	width:12px;
+	height:24px;
+	-webkit-transform-origin:100% 0;
+	-webkit-transform:rotate3d(242,-557,-429,-462deg);
+}
+.fountain .northB
+{
+    background:rgba(1,178,0,0);
+    top: -16.5vh;
+    left: 8.6vw;
+	width:12px;
+	height:24px;
+	-webkit-transform-origin:0 0;
+    -webkit-transform:rotate3d(231,-83,225,149deg);
+
+}
+.fountain .southB
+{
+    background:rgba(128, 255, 0, 0);
+    top:-14vh;
+    left:7.5vw;
+    width:12px;
+	height:24px;
+	-webkit-transform-origin:100% 100%;
+	-webkit-transform:rotate3d(265,-564,-187,-458deg);
+}
+.fountain article{
+    height: 2.5vh;
+    width: 11vw;
+}
+/* roundabout */
+.roundabout
+{
+	font-size:0;
+    position:absolute;
+	display:block;
+	top:51vh;
+	left:22vw;
+    background:linear-gradient(180deg,rgba(1,178,0,0.9), rgba(0,0,0,1));
+	width:135px;
+    height:135px;
+    -webkit-border-radius: 65px; 
+    -moz-border-radius: 65px; 
+    border-radius:65px; 
+	overflow:visible;
+    -webkit-transition: all 0.5s ease-out;
+	-webkit-transform: rotate3d(0,0,1,0deg);
+    -webkit-transform-style: preserve-3d;
+    animation: roundAbout 5s ease 19s forwards;
+    -webkit-animation: roundAbout 5s ease 19s forwards;
+    -moz-animation: roundAbout 5s ease 19s forwards;
+  }
+   @keyframes roundAbout {
+      0% {
+    }100%{
+        top:58vh
+    }
+      } 
+
+.roundaboutB
+{
+	font-size:0;
+    position:absolute;
+	display:block;
+	top:55.75vh;
+	left:29.1vw;
+    background:rgba(0,0,0,1);
+    border: 1px solid #01FF00;
+	width:90px;
+    height:90px;
+    -webkit-border-radius: 65px; 
+    -moz-border-radius: 65px; 
+    border-radius:65px; 
+	overflow:visible;
+    -webkit-transition: all 0.5s ease-out;
+	-webkit-transform: rotate3d(0,0,1,0deg);
+    -webkit-transform-style: preserve-3d;
+    animation: roundAboutB 5s ease 19s forwards;
+    -webkit-animation: roundAboutB 5s ease 19s forwards;
+    -moz-animation: roundAboutB 5s ease 19s forwards;
+  }
+   @keyframes roundAboutB {
+      0% {
+    }100%{
+        top:62.65vh
+    }
+      } 
+/* welcome */
+    .welcome
+{
+    background:rgba(0,0,0,0.7);
+    border: 1px solid #01FF00;;
+    top:115vh;
+    left:21vw;
+    width:54vw;
+    height:18vh;
+    font-size: 15px;
+	-webkit-transform-origin:100% 100%;
+    -webkit-transform:rotate3d(1,0,0,-90deg);
+    animation: down 3.5s ease 19s forwards;
+    -webkit-animation: down 3.5s ease 19s forwards;
+    -moz-animation: down 3.5s ease 19s forwards;
+  }
+   @keyframes down {
+      0% {
+    }20%{
+        -webkit-transform:rotate3d(1,0,0,-90deg);
+    }40%{
+        -webkit-transform:rotate3d(1,0,0,0deg);
+    }100%{
+        top:529vw;
+    }    
+}
+.welcome p {
+    color:#01FF00;
+    margin: 0;
+    position: absolute;
+    top: 25vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 1px #60F000, -1px 1px 2px #60F000;
+  }
+@media screen and (min-height: 568px){
+    .block-10 {
+        top: 58.5vh;
+    }
+    @keyframes block-10{
+        0%{}100%{
+            top: 64.5vh;
+        }
+    }
+    .block-23 {
+        top: 58.5vh;
+    }
+    @keyframes block-23{
+        0%{}100%{
+            top: 64.5vh;
+        }
+    }
+    .road-1 {
+        height: 58vh;
+        top: 73.75vh;
+        animation: road-1 5s ease 19s forwards;
+        -webkit-animation: road-1 5s ease 19s forwards;
+        -moz-animation: road-1 5s ease 19s forwards;
+    }
+    @keyframes road-1 {
+        0% {
+        }100%{
+            top: 81.25vh;
+            height: 50vh;        
+        }    
+    }
+    .road-2 {
+        height: 58vh;
+        top: 73.75vh;
+        animation: road-2 5s ease 19s forwards;
+        -webkit-animation: road-2 5s ease 19s forwards;
+        -moz-animation: road-2 5s ease 19s forwards;
+    }
+    @keyframes road-2 {
+        0% {
+        }100%{
+            top: 81.25vh;
+            height: 50vh;        
+        }    
+    }
+    .road-3 {
+        top: 77vh;
+    }
+    @keyframes road-3{
+        0%{}100%{
+            top: 76.5vh;
+        }
+    }
+    @keyframes road-4{
+        0%{}100%{
+            top: 73.5vh;
+        }
+    }
+    .road-5 {
+        top: 61.5vh;
+    }
+    @keyframes road-5{
+        0%{}100%{
+            top: 61.5vh;
+        }
+    }
+    @keyframes road-6{
+        0%{}100%{
+            top: 58.5vh;
+        }
+    }
+    .road-7 {
+        top: 47vh;
+    }
+    @keyframes road-7{
+        0%{}100%{
+            top: 47.5vh;
+        }
+    }
+    @keyframes road-8{
+        0%{}100%{
+            top: 46.5vh;
+        }
+    }
+    .road-9, .road-10 {
+        top: 55vh;
+        height: 17vh;
+    }
+    @keyframes road-9{
+        0%{}100%{
+            top: 61vh;
+        }
+    }
+    @keyframes road-10{
+        0%{}100%{
+            top: 61vh;
+        }
+    }
+    .road-11, .road-12 {
+        height: 93vh;
+    }
+    .road-16, .road-17 {
+        top: 35vh;
+        height: 30vh;
+    }
+    .fountain{
+        top: 56.75vh;
+    }
+    @keyframes fountain{
+        0%{}100%{
+            top: 64.5vh;
+        }
+    }
+    .roundaboutB{
+        top: 55vh;
+    }
+}
+@media only screen and (min-width:360px){
+    .world{
+        left: 15vw;
+    }
+    .block-1, .block-2{
+        left: 58vw;
+    }
+    .block-3{
+        left: 62vw;
+    }
+    .block-4{
+        left: 63vw;
+    }
+    .block-5, .block-6{
+        left: 57vw;
+    }
+    .block-7, .block-8, .block-9, .block-10, .block-11, .block-12, .block-13{
+        left: 88vw;
+    }
+    .block-14, .block-15, .block-18, .block-19{
+      left:11vw;
+    }
+    .block-16{
+      left:6vw;
+    }
+    .block-17{
+      left:4vw;
+    }
+    .block-28{
+      left:34.5vw;
+    }
+    .road-1{
+      left: 33vw;
+    }
+    .road-2 {
+      left: 44vw;
+    }
+    .road-3 {
+        top: 76vh;    
+    }
+    .road-5 {
+        top: 60.5vh;
+    }
+    .road-7 {
+        top: 46vh;
+    }
+  .road-10{
+      left: 71vw;
+  }
+  .road-12{
+    left: 76.5vw;
+    animation: road-12 5s ease 19s forwards;
+      -webkit-animation: road-12 5s ease 19s forwards;
+      -moz-animation: road-12 5s ease 19s forwards;
+  }
+  @keyframes road-12 {
+    0% {
+    }100%{
+        left: 78vw;
+        height: 110vh;
+        top: 21.25vh;
+    }    
+    }
+    @keyframes road-3 {
+        0% {
+        }100%{
+            top: 75.5vh;
+        }    
+    }
+    @keyframes road-4 {
+        0% {
+        }100%{
+            top: 73.5vh;
+        }    
+    }
+    @keyframes road-5 {
+        0% {
+        }100%{
+            top: 60.5vh;
+        }    
+    }
+    @keyframes road-6 {
+        0% {
+        }100%{
+            top: 58.5vh;
+        }    
+    }
+    @keyframes road-7 {
+        0% {
+        }100%{
+            top: 46.5vh;
+        }    
+    }
+  @keyframes road-8 {
+      0% {
+      }100%{
+          top: 47.5vh;
+      }    
+  }
+  .road-9 {
+    left: 3.5vw;
+  }
+  .road-10 {
+    left: 73vw;
+  }
+  .road-13{
+      left: 36.6vw;
+      animation: road-13 5s ease 19s forwards;
+      -webkit-animation: road-13 5s ease 19s forwards;
+      -moz-animation: road-13 5s ease 19s forwards;
+  }
+  @keyframes road-13 {
+      0% {
+      }100%{
+          left: 36.8vw;
+      }    
+  }
+  .road-14 {
+        height: 8.5vh;
+        left: 34.1vw;
+        animation: road-14 5s ease 19s forwards;
+        -webkit-animation: road-14 5s ease 19s forwards;
+        -moz-animation: road-14 5s ease 19s forwards;
+  }
+  @keyframes road-14 {
+      0% {
+      }100%{
+          height: 10vh;
+          top:42vh;
+          left: 33.5vw;
+      }    
+  }
+  .road-15 {
+    height: 8.5vh;
+    left: 48.3vw;
+    animation: road-15 5s ease 19s forwards;
+    -webkit-animation: road-15 5s ease 19s forwards;
+    -moz-animation: road-15 5s ease 19s forwards;
+}
+@keyframes road-15 {
+    0% {
+    }100%{
+        height: 10vh;
+        top:42vh;
+        left: 49.5vw;
+    }    
+}
+
+  .road-16{
+      height: 32vh;
+      left:75vw
+  }
+  .road-17{
+      height: 32vh;
+      left: 7vw;
+  }
+  .road-18{
+    height: 30.5vh;
+}
+  .road-19{
+    height: 30.5vh;
+    left:53.5vw;
+    animation: road-19 5s ease 19s forwards;
+    -webkit-animation: road-19 5s ease 19s forwards;
+    -moz-animation: road-19 5s ease 19s forwards;
+  }
+  @keyframes road-19 {
+      0% {
+      }100%{
+        left: 65vw;
+        height: 18.5vh;
+        top: 16.5vh;
+      }    
+  }
+  @keyframes road-20{
+    0%{}100%{
+        left: 45vw;
+    }
+}
+  .road-21 {
+      height: 26vh;
+  }
+  .road-22{
+      height: 26vh;
+      left: 71vw;
+  }
+  @keyframes road-22{
+    0%{}100%{
+        left: 81vw;
+    }
+}
+  .road-23 {
+      left: 11vw;
+  }
+  .road-24{
+      left: 70vw;
+  }
+  .fountain{
+      left: 32vw;
+  }
+  @keyframes fountain{
+  0% {
+  }100%{
+      top:62.5vh;
+  }   
+}
+.roundabout{
+    left:22.5vw;
+}
+.roundaboutB{
+    left: 29.1vw;
+}
+}
+@media screen and (min-height: 598px){
+    .block-10, .block-23{
+        top: 59vh;
+    }
+    @keyframes block-10{
+        0%{}
+        100%{top:65vh;
+        }
+    }
+    @keyframes block-11{
+        0%{}
+        100%{top:65vh;
+        }
+    }
+    .road-1{
+        height: 59vh;
+        top: 72vh;
+    }
+    @keyframes road-1{
+        0%{
+        }100%{
+            top: 80vh;
+            height: 51vh;
+        }
+    }     
+    .road-2{
+        height: 59vh;
+        top: 72vh;
+    }  
+    @keyframes road-2{
+        0%{
+        }100%{
+            top: 80vh;
+            height: 51vh;
+        }
+    }   
+    .road-9 {
+        top: 53vh;
+        height: 21vh;
+    }
+    @keyframes road-9 {
+        0% {
+        }100%{
+            top:58.5vh;
+        }    
+    }
+    .road-10 {
+        top: 53vh;
+        height: 21vh;
+    }
+    @keyframes road-10 {
+        0% {
+        }100%{
+            top:58.5vh;
+        }    
+    }   
+    .road-11{
+        height: 91.5vh;
+    }
+    @keyframes road-11{
+        0%{}100%{
+            top: 20.5vh;
+            height: 90vh;
+        }
+    }
+    .road-12{
+        height: 91.5vh;
+    }
+    @keyframes road-13{
+        0%{
+        }100%{
+            top: 50vh;
+        }
+    } 
+    .road-14{
+        top:44vh;
+    }    
+    @keyframes road-14{
+        0%{
+        }100%{
+            top: 51vh;
+        }
+    }   
+    .road-15{
+        top:44vh;
+    }
+    @keyframes road-15{
+        0%{
+        }100%{
+            top: 51vh;
+        }
+    }   
+    .road-16 {
+        top: 34.5vh;
+        height: 31.5vh;
+    }
+    .road-17 {
+        top: 34vh;
+        height: 32.5vh;
+    }
+    @keyframes roundAboutB{
+        0%{
+        }100%{
+            top: 62vh;
+        }
+    }
+    @keyframes fountain{
+        0%{
+        }100%{
+            top: 63.6vh;
+        }
+    } 
+}
+@media only screen and (min-width:375px){
+    .block-1, .block-2{
+        left: 58vw;
+    }
+    .block-3{
+        left: 62vw;
+    }
+    .block-4{
+        left: 63vw;
+    }
+    .block-5, .block-6{
+        left: 57vw;
+    }
+    .block-7, .block-8, .block-9, .block-10, .block-11, .block-12, .block-13{
+        left: 85.5vw;
+    }
+    .block-27{
+        left: 31vw;
+    }
+    .block-28{
+        left: 33.5vw;
+    }
+    .road-1{
+        left: 33vw;
+    }
+    .road-2{
+        left: 43vw;
+    }
+    .road-9{
+        left: 4vw;
+    }
+    .road-10{
+        left: 70vw;
+    }
+    .road-11{
+        left: -5vw;
+    }
+    .road-12{
+        left: 78.5vw;
+    }
+    @keyframes road-12{
+        0%{    
+        }100%{
+            left: 76.5vw;
+        }
+    }
+    .road-13{
+        left: 35.5vw;
+    }
+    .road-14{
+        left: 33.3vw;
+    }
+    .road-15{
+        left: 47vw;
+    }
+    .road-16{
+        left: 72.6vw;
+    }
+    .road-17{
+        left: 7vw;
+    }
+    .road-19{
+        left: 52vw;
+    }
+     @keyframes road-19{
+        0%{
+        }100%{
+            left:63.5vw;
+            height: 18.5vh;
+            top: 16.5vh;
+        } 
+    }
+    .road-20{
+        left: 42vw;
+    }
+    @keyframes road-21{
+        0%{
+        }100%{
+            left:-2.5vw;
+        }
+    }
+    .road-22{
+        left:70vw;
+    }
+    .road-23{
+        left:10vw;
+    }
+    .road-24{
+        left:69vw;
+    }
+    .fountain{
+        left: 30.8vw;
+    }
+    .roundaboutB{
+        left: 28.1vw;
+    }
+}
+@media only screen and (min-width:384px){
+    .world{
+        left: 11vw;
+    }
+    .block-1, .block-2 {
+        left: 57vw;
+    }
+    .block-3 {
+        left: 61vw;
+    }
+    .block-4 {
+        left: 62vw;
+    }
+    .block-5, .block-6 {
+        left: 56vw;
+    }
+    .block-7, .block-8, .block-9, .block-10, .block-11, .block-12, .block-13 {
+        left: 84.5vw;
+    }
+    .block-18, .block-19 {
+        left: 10vw;
+    }
+    .road-10{
+        left: 70.5vw;
+    }
+    @keyframes road-11{
+        0%{}100%{
+            left: -4.5vw;
+                }
+    }
+    .road-12{
+        left: 77.5vw;
+    }
+    @keyframes road-12{
+        0%{}100%{
+            top: 20.5vh;
+            height: 90vh;
+                }
+    }
+    .road-16{
+        left: 71.6vw;
+    }
+    .road-20 {
+        left: 41vw;
+    }
+}
+@media only screen and (min-height:640px){
+    .road-1, .road-2 {
+        height: 60vh;
+        top: 71vh;
+    }
+    @keyframes road-1{
+        0%{}100%{
+            top: 78vh;
+            height: 53vh;
+        }
+    }
+    @keyframes road-2{
+        0%{}100%{
+            top: 78vh;
+            height: 53vh;
+        }
+    }
+    .road-3{
+        height: 68vh;
+        top: 77vh;
+    }
+    @keyframes road-3{
+        0%{}100%{
+            top: 77vh;
+        }
+    }
+    .road-4{
+        height: 68vh;
+        top: 74vh;
+    }
+    @keyframes road-4{
+        0%{}100%{
+            top: 74vh;
+        }
+    }
+    .road-5{
+        height: 68vh;
+        top: 62vh;
+    }
+    @keyframes road-5{
+        0%{}100%{
+            top: 62vh;
+        }
+    }
+    .road-6{
+        height: 68vh;
+        top: 59vh;
+    }
+    @keyframes road-6{
+        0%{}100%{
+            top: 59vh;
+        }
+    }
+    .road-7{
+        height: 68vh;
+        top: 47vh;
+    }
+    .road-8{
+        height: 68vh;
+        top: 44vh;
+    }
+    .road-11 {
+        height: 91vh;
+        top: 20.5vh;
+    }
+    .road-12 {
+        height: 91vh;
+        top: 20.5vh;
+    }
+    .road-16 {
+        top: 35.5vh;
+        height: 29.5vh;
+    }
+    .road-17 {
+        top: 35vh;
+        height: 31vh;
+    }
+    .road-20{
+        height: 63vh;
+        top: -11vh;
+    }
+    .roundaboutB {
+    top: 54.5vh;
+    }
+    .fountain {
+        top: 56vh;
+    }
+}
+@media only screen and (min-height:667px){
+    .road-1, .road-2{
+        height: 61vh;
+        top: 70vh;
+    }
+    @keyframes road-1{
+        0%{
+        }100%{
+            top: 77vh;
+            height: 54vh;
+        }
+    }
+    @keyframes road-2{
+        0%{
+        }100%{
+            top: 77vh;
+            height: 54vh;
+        }
+    }
+    .road-3, .road-7{
+        height: 64vh;
+    }
+    @keyframes road-3{
+        0%{
+        }100%{
+            top: 78vh;
+        }
+    }
+    .road-4{
+        height: 64vh;
+        top:76vh;
+    }
+    @keyframes road-4{
+        0%{
+        }100%{
+            top: 76vh;
+        }
+    }
+    .road-5{
+        height: 64vh;
+        top: 63.5vh;
+    }
+    @keyframes road-5{
+        0%{
+        }100%{
+            top: 63vh;
+        }
+    }
+    .road-6{
+        height: 64vh;
+        top:61vh;
+    }
+    @keyframes road-6{
+        0%{
+        }100%{
+            top: 61vh;
+        }
+    }
+    @keyframes road-7{
+        0%{
+        }100%{
+            top: 48vh;
+        }
+    }
+    .road-8{
+        height: 64vh;
+        top:46vh;
+    }
+    @keyframes road-8{
+        0%{
+        }100%{
+            top: 46vh;
+        }
+    }
+    .road-11, .road-12{
+        height: 90.5vh;
+    }
+    @keyframes road-12{
+        0%{
+        }100%{
+            height: 110vh;
+            top: 21.25vh;
+        }
+    }
+    .road-14, .road-15{
+        top: 42vh;
+        height: 10vh;
+    }
+    .road-16{
+        height: 29vh;
+        top: 34.5vh;
+    }
+    .road-20{
+        height:63vh;
+        top:-12vh;
+    }
+    @keyframes road-23{
+        0%{}100%{
+            height: 35vh;
+        }
+    }
+    @keyframes road-24{
+        0%{}100%{
+            height: 35vh;
+        }
+    }
+    .fountain{
+        top: 56vh;
+    }
+    @keyframes fountain{
+        0%{
+        }100%{
+            top: 63vh;
+        }
+    }
+    .roundaboutB{
+        top: 54.5vh;
+    }
+    @keyframes roundAboutB{
+        0%{
+        }100%{
+            top: 61.5vh;
+        }
+    }
+}
+@media only screen and (min-width:414px){
+    .world {
+        left: 9vw;
+    }
+    .block-1 , .block-2, .block-5, .block-6{
+        left: 58.5vw;
+    }
+    .block-3{
+        left: 62.5vw;
+    }
+    .block-4{
+        left: 63.5vw;
+    }
+    .block-7, .block-8, .block-9, .block-10, .block-11, .block-12, .block-13{
+        left: 87.5vw;
+    }
+    .block-27{
+        left: 32vw;
+    }
+    @keyframes block-27{
+        0%{}100%{
+            top: 75%;
+            left: 22vw;
+            width: 152px;
+            height: 110px;
+        }
+    }
+    .block-28{
+        left: 35vw;
+    }
+    .road-2{
+        left:43.5vw;
+    }
+    .road-12{
+        left:79vw;
+    }
+    @keyframes road-14{
+        0%{}100%{
+            left: 33vw;
+        }
+    }
+    @keyframes road-15{
+        0%{}100%{
+            left: 47.3vw;
+        }
+    }
+    .road-18{
+        left: 26vw;
+    }
+    @keyframes road-18{
+        0%{}100%{
+                height: 18.5vh;
+                top: 16.5vh;
+                left: 16vw;
+            }
+        }
+    .road-19{
+        left: 54vw;
+    }
+    @keyframes road-19{
+        0%{}100%{
+                left: 64.5vw;
+                height: 18.5vh;
+                top: 16.5vh;
+            }
+        }
+    .road-22 {
+        left: 71vw;
+    }
+    .roundabout {
+        left: 24vw;
+    }
+    .roundaboutB {
+        left: 29.5vw;
+    }
+    .fountain {
+        left: 32vw;
+    }
+}
+@media only screen and (min-height:736px){
+    .block-10, .block-23 {
+        top: 57vh;
+    }
+    @keyframes block-10{
+        0%{}100%{
+            top: 64.5vh;
+        }
+    }
+    @keyframes block-23{
+        0%{}100%{
+            top: 64.5vh;
+        }
+    }
+    .road-1, .road-2 {
+        height: 63vh;
+        top: 68vh;
+    }
+    @keyframes road-1{
+        0%{}100%{
+            top: 76vh;
+            height: 55vh;
+        }
+    }
+    @keyframes road-2{
+        0%{}100%{
+            top: 76vh;
+            height: 55vh;
+        }
+    }
+    .road-3{
+        top: 78vh;
+    }
+    .road-4{
+        top: 75.5vh;
+    }
+    .road-7{
+        top: 48vh;
+    }
+    .road-9, .road-10{
+        top: 50vh;
+    }
+    @keyframes road-9{
+        0%{}100%{
+            top:58vh;
+        }
+    }
+    @keyframes road-10{
+        0%{}100%{
+            top:58vh;
+        }
+    }
+    .road-11, .road-12{
+        height: 91vh;
+        top: 19vh;
+    }
+    @keyframes road-12{
+        0%{}100%{
+            height: 91vh;
+            top: 19.25vh;
+        }
+    }
+    @keyframes road-14{
+        0%{}100%{
+            top: 49vh;
+        }
+    }
+    @keyframes road-15{
+        0%{}100%{
+            top: 49vh;
+        }
+    }
+    .road-16{
+        top: 34vh;
+    }
+    @keyframes road-16{
+        0%{}100%{
+            height: 30vh;
+            top: 34vh;
+            left: 72.5vw;        
+        }
+    }
+    .road-17 {
+        top: 33.5vh;
+        height: 30vh;
+    }
+    @keyframes road-17{
+        0%{}100%{
+            height: 30vh;
+            top: 34vh;
+            left: 11.3vw;        
+        }
+    }
+    .road-18, .road-19{
+        height: 29vh;
+    }
+    .road-20 {
+        height: 61vh;
+        top: -11vh;
+    }
+    .road-21, .road-22{
+        top:24vh;
+        height: 20vh;
+    }
+    @keyframes road-23{
+        0%{}100%{
+            height: 30vh;
+        }
+    }
+    @keyframes road-24{
+        0%{}100%{
+            height: 30vh;
+        }
+    }
+}
+@media only screen and (min-width:600px){
+    .world{
+        left: 16vw;
+    }
+    .block-1, .block-2, .block-5, .block-6 {
+        left: 56vw;
+    }
+    .block-3{
+        left: 59vw;
+    }
+    .block-4{
+        left:61vw;
+    }
+    .block-7, .block-8, .block-9, .block-10, .block-11, .block-12, .block-13 {
+        left: 85.5vw;
+    }
+    .block-16 {
+        left: 7vw;
+    }
+    .block-17 {
+        left: 5vw;
+    }
+    .block-27 {
+        left: 29.8vw;
+    }
+    .block-28{
+        left: 34vw;
+    }
+    @keyframes block-27{
+        0%{}100%{
+            top: 75%;
+            left: 27.3vw;
+            width: 152px;
+            height: 110px;
+        }
+    }
+    .road-1{
+        left: 32vw;
+    }
+    @keyframes road-1{
+        0%{}100%{
+            top:74vh;
+            height: 57vh;
+        }
+    }
+    @keyframes road-2{
+        0%{}100%{
+            top:74vh;
+            height: 57vh;
+        }
+    }
+    .road-2 {
+        left: 43vw;
+    }
+    .road-11 {
+        left: -3vw;
+    }
+    @keyframes road-11{
+        0%{}100%{
+            left: -3.5vw;
+        }
+    }
+    .road-12 {
+        left: 76vw;
+    }
+    .road-13 {
+        left: 35vw;
+    }
+    .road-14 {
+        left: 32.3vw;
+    }
+    .road-15 {
+        left: 46.8vw;
+    }
+    .road-16 {
+        left: 71vw;
+    }
+    .road-18 {
+        left: 25vw;
+    }
+    @keyframes road-18{
+        0%{}100%{
+            height: 18.5vh;
+            top: 16.5vh;
+            left: 14vw;
+        }
+    }
+    .road-19{
+        left:53vw;
+    }
+    .road-20 {
+        left: 38vw;
+    }
+    @keyframes road-20{
+        0%{}100%{
+            left: 38.5vw;
+        }
+    }
+    .road-21{
+        left: 8vw;
+    }
+    .road-22 {
+        left: 70vw;
+    }
+    .road-23{
+        left: 11vw;
+    }
+    .road-24 {
+        left: 67vw;
+    }
+    .fountain {
+        left: 33.5vw;
+    }
+    .roundabout {
+        left: 23.5vw;
+    }
+    
+    .roundaboutB {
+        left: 29.8vw;
+    }
+}
+@media only screen and (min-height:1024px){
+    .building .top {
+        height: 75px;
+        width: 75px;
+    }
+    @keyframes building-xpandT{
+        0%{}100%{
+            width: 175px;
+            height: 150px;
+        }
+    }
+    @keyframes block-10{
+        0%{}100%{
+            top: 62.5vh;
+        }
+    }@keyframes block-23{
+        0%{}100%{
+            top: 62.5vh;
+        }
+    }
+    .building .top-27{
+        height: 125px;
+        width: 125px;
+    }
+    @keyframes block-27{
+        0%{}100%{
+            top: 32.5vh;
+            left: 24.5vw;
+        }
+    }
+    .road-1, .road-2 {
+        height: 62vh;
+        top: 69vh;
+    }
+    
+    .road-8{
+        top: 4vh;
+    }
+    .road-9, .road-10 {
+        top: 50.5vh;
+    }
+    @keyframes road-9{
+        0%{}100%{
+            top: 56vh;
+        }
+    }
+    @keyframes road-10{
+        0%{}100%{
+            top: 56vh;
+        }
+    }
+    .road-14, .road-15{
+        height: 11.5vh;
+    }
+    @keyframes road-13{
+        0%{}100%{
+            top: 47vh;
+        }
+    }
+    @keyframes road-14{
+        0%{}100%{
+            top: 47vh;
+        }
+    }
+    @keyframes road-15{
+        0%{}100%{
+            top: 47vh;
+        }
+    }
+    @keyframes road-16{
+        0%{}100%{
+            height: 31vh;
+            top: 33.5vh;
+            left:72.5vw;
+        }
+    }
+    .road-17{
+        top: 34vh;
+        height: 29vh;
+    }
+    @keyframes road-17{
+        0%{}100%{
+            height: 25vh;
+            top: 36.5vh;
+            left: 11.3vw;
+        }
+    }
+    .roundabout{
+        width: 200px;
+        height: 200px;
+        border-radius: 125px;
+    }
+    .roundaboutB{
+        width: 125px;
+        height: 125px;
+        border-radius: 100px;
+    }
+    @keyframes roundAbout{
+        0%{}100%{
+            top: 56vh;
+        }
+    }
+    @keyframes roundAboutB{
+        0%{}100%{
+            top: 59.5vh;
+        }
+    }
+    .fountain{
+        width: 80px;
+        height: 80px;
+        border-radius: 45px;
+        top: 56.5vh;
+    }
+    @keyframes fountain{
+        0%{}100%{
+            top:61.5vh;
+        }
+    }
+    .fountain .top{
+        width: 80px;
+        height: 80px;
+        border-radius: 45px;
+    }
+}
+@media only screen and (min-width:1024px){
+    .world{
+        left: 20vw;
+    }
+    .building{
+        width: 77px;
+        height: 77px;
+    }
+    .building .top{
+        width: 75px;
+        height: 75px;
+    }
+    .block-1, .block-2, .block-5, .block-6 {
+        left: 42.5vw;
+    }
+    .block-1{
+        top: 115vh;
+    }
+    @keyframes block-1{
+        0%{}100%{
+            left:43.1vw
+        }
+    }
+    .block-2{
+        top: 98.5vh;
+    }
+    @keyframes block-2{
+        0%{}100%{
+            left:43.1vw
+        }
+    }
+    .block-3{
+        top: 82vh;
+    }
+    @keyframes block-3{
+        0%{}100%{
+            left:46.1vw
+        }
+    }
+    .block-4{
+        top: 49vh;
+    }
+    @keyframes block-4{
+        0%{}100%{
+            left:46.1vw
+        }
+    }
+    .block-3, .block-4{
+        left: 45.5vw;
+    }
+    .block-5{
+        top: 33.5vh;
+    }
+    @keyframes block-5{
+        0%{}100%{
+            left:43.1vw
+        }
+    }
+    .block-6{
+        top: 17.5vh;
+    }
+    @keyframes block-6{
+        0%{}100%{
+            left:43.1vw
+        }
+    }
+    .block-7, .block-8, .block-9, .block-10, .block-11, .block-12, .block-13 {
+        left: 70vw;
+    }
+    .block-7{
+        top: 115vh;
+    }
+    @keyframes block-7{
+        0%{}100%{
+            left:70.6vw
+        }
+    }
+    .block-8{
+        top: 98.5vh;
+    }
+    @keyframes block-8{
+        0%{}100%{
+            left:70.6vw
+        }
+    }
+    .block-9{
+        top: 82vh;
+    }
+    @keyframes block-9{
+        0%{}100%{
+            left:70.6vw
+        }
+    }
+    .block-10{
+        top: 65.5vh;
+    }
+    @keyframes block-10{
+        0%{}100%{
+            left:70vw
+        }
+    }
+    .block-11{
+        top: 49vh;
+    }
+    @keyframes block-11{
+        0%{}100%{
+            left:70.6vw
+        }
+    }
+    .block-12{
+        top: 33.5vh;
+    }
+    @keyframes block-12{
+        0%{}100%{
+            left:70.6vw
+        }
+    }
+    .block-13{
+        top: 17.5vh;
+    }
+    @keyframes block-13{
+        0%{}100%{
+            left:70.6vw
+        }
+    }
+    .block-14, .block-15, .block-18, .block-19 {
+        left: 7.5vw;
+    }
+    .block-14{
+        top: 115vh;
+    }
+    .block-15{
+        top: 98.5vh;
+    }
+    .block-16{
+        top: 82vh;
+    }
+    .block-16, .block-17{
+        left: 3.5vw;
+    }
+    .block-17{
+        top: 49vh;
+    }
+    .block-18{
+        top: 33.5vh;
+    }
+    .block-19{
+        top: 17.5vh;
+    }
+    .block-20{
+        top: 115vh;
+    }
+    .block-21 {
+        top: 98.5vh;
+    }
+    .block-22 {
+        top: 82vh;
+    }
+    .block-23 {
+        top: 65.5vh;
+    }
+    @keyframes block-23{
+        0%{}100%{
+            top: 65.5vh;
+        }
+    }
+    .block-24 {
+        top: 49vh;
+    }
+    .block-25 {
+        top: 33.5vh;
+    }
+    .block-26 {
+        top: 17.5vh;
+    }
+    .block-27{
+        width: 100px;
+        left: 23.8vw;
+        top: 29vh;
+    }
+    @keyframes block-27{
+        0%{}100%{
+            width: 180px;
+            height: 110px;
+            left: 20.5vw;
+            top: 29vh;
+        }
+    }
+    .building .top-27{
+        width: 100px;
+        height: 100px;
+    }
+    @keyframes building-xpandT{
+        0%{}100%{
+            width: 180px;
+            height: 110px;
+        }
+    }
+    .block-28 {
+        left: 25vw;
+    }
+
+    .road-1{
+        height: 47vh;
+        width: 3vw;
+        top: 84vh;
+        left: 24.9vw;
+    }
+    @keyframes road-1{
+        0%{}100%{
+            top: 84vh;
+            height: 47vh;
+            left: 25.5vw;
+        }
+    }
+    .road-2{
+        height: 47vh;
+        width: 3vw;
+        top: 84vh;
+        left: 29.5vw;
+    }
+    @keyframes road-2{
+        0%{}100%{
+            top: 84vh;
+            height: 47vh;
+            left: 30.1vw;
+        }
+    }
+    .road-3, .road-4, .road-5, .road-6, .road-7, .road-8{
+        left: 28.2vw;
+        height: 160vh;
+    }
+    .road-3{
+        top: 44vh;
+    }
+    @keyframes road-3{
+        0%{}100%{
+            height: 160vh;
+            top: 44vh;
+                }
+    }
+    .road-4{
+        top: 40vh;
+    }
+    @keyframes road-4{
+        0%{}100%{
+            height: 160vh;
+            top: 40vh;
+                }
+    }
+    .road-5{
+        top: 27vh;
+    }
+    @keyframes road-5{
+        0%{}100%{
+            height: 160vh;
+            top: 27vh;
+                }
+    }
+    .road-6{
+        top: 23vh;
+    }
+    @keyframes road-6{
+        0%{}100%{
+            height: 160vh;
+            top: 23vh;
+                }
+    }
+    .road-7 {
+        top: 11vh;
+    }
+    @keyframes road-7{
+        0%{}100%{
+            height: 160vh;
+            top: 11vh;
+                }
+    }
+    .road-8 {
+        top: 7vh;
+    }
+    @keyframes road-8{
+        0%{}100%{
+            height: 160vh;
+            top: 7vh;
+                }
+    }
+    .road-9{
+        height: 65vh;
+        width: 3.5vw;
+        top: 38.5vh;
+        left: -1vw;
+    }
+    @keyframes road-9{
+        0%{}100%{
+            top: 38.5vh;
+            left: 0vw;
+        }
+    }
+    .road-10{
+        height: 65vh;
+        width: 3.5vw;
+        top: 38.5vh;
+        left: 54.9vw;
+    }
+    @keyframes road-10{
+        0%{}100%{
+            top: 38.5vh;
+        }
+    }
+    .road-11{
+        width: 3vw;
+        height: 100vh;
+        top: 23.2vh;
+        left: -5vw;
+    }
+    @keyframes road-11{
+        0%{}100%{
+            height: 100vh;
+            top: 135px;
+        }
+    }
+    .road-12{
+        width: 3vw;
+        height: 100vh;
+        top: 23.2vh;
+        left: 58.5vw;
+    }
+    @keyframes road-12{
+        0%{}100%{
+            height: 100vh;
+            top: 137px;
+        }
+    }
+    .road-13 {
+        left: 26.2vw;
+        width: 5vw;
+        top: 250px;
+    }
+    @keyframes road-13{
+        0%{}100%{
+        left: 344px;
+        }
+    }
+    .road-14 {
+        height: 12vh;
+        left: 329px;
+        top: 44vh;
+    }
+    @keyframes road-14{
+        0%{}100%{
+            left: 329px;
+        }
+    }
+    .road-15{
+        height: 12vh;
+        left: 31.7vw;
+        top: 44vh;
+    }
+    @keyframes road-15{
+        0%{}100%{
+            left: 414px;
+        }
+    }
+    .road-16 {
+        height: 64vh;
+        top: 21.5vh;
+        left: 50.5vw;
+    }
+    @keyframes road-16{
+        0%{}100%{
+            height: 64vh;
+            top: 21.5vh;
+            left: 51.1vw;
+        }
+    }
+    .road-17 {
+        height: 64vh;
+        top: 21.5vh;
+        left: 5.5vw;
+    }
+    @keyframes road-17{
+        0%{}100%{
+            height: 64vh;
+            top: 21.5vh;
+            left: 6.1vw;
+        }
+    }
+    .road-18 {
+        height: 29vh;
+        top: 23.5vh;
+        left: 19vw;
+    }
+    @keyframes road-18{
+        0%{}100%{
+            height: 29.5vh;
+            top: 23.5vh;
+            left: 19vw;
+        }
+    }
+    .road-19 {
+        height: 29vh;
+        top: 23.5vh;
+        left: 37vw;
+    }
+    @keyframes road-19{
+        0%{}100%{
+            height: 29vh;
+            top: 23.5vh;
+            left: 38.5vw;
+        }
+    }
+    .road-20{
+        height: 160vh;
+        top: -57vh;
+        left:28vw;
+    }
+    @keyframes road-20{
+        0%{}100%{
+            height: 160vh;
+            top: -57vh;
+            left: 28vw;
+        }
+    }
+    .road-21 {
+        height: 60vh;
+        left: 2vw;
+        top: 10vh;
+    }
+    @keyframes road-21{
+        0%{}100%{
+            height: 60vh;
+            left: 2vw;
+            top: 10vh;
+        }
+    }
+    .road-22 {
+        height: 60vh;
+        top: 10vh;
+        left: 54vw;
+    }
+    @keyframes road-22{
+        0%{}100%{
+            height: 60vh;
+            top: 10vh;
+            left: 54vw;
+        }
+    }
+    .road-23 {
+        top: 350px;
+        left: 6.8vw;
+    }
+    @keyframes road-23{
+        0%{}100%{
+            top: 350px;
+        }
+    }
+    .road-24 {
+        top: 350px;
+        left: 48.8vw;
+    }
+    @keyframes road-24{
+        0%{}100%{
+            top: 350px;
+        }
+    }
+    .fountain{
+        top: 64.1vh;
+        left: 25.2vw;
+    }
+    @keyframes fountain{
+        0%{}100%{
+            top: 64.1vh;
+            left: 25.8vw;
+        }
+    }
+    .roundabout{
+        width: 190px;
+        height: 190px;
+        top: 53.5vh;
+        left: 19.4vw;
+        border-radius: 150px;
+    }
+    @keyframes roundAbout{
+        0%{}100%{
+            width: 190px;
+            height: 190px;
+            top: 53.5vh;
+            left: 20vw;
+            border-radius: 150px;
+        }
+    }
+    .roundaboutB{
+        height: 125px;
+        width: 125px;
+        top: 59vh;
+        left: 22.5vw;
+        border-radius: 100px;
+    }
+    @keyframes roundAboutB{
+        0%{}100%{
+            top: 59vh;
+            width: 125px;
+            height: 125px;
+            border-radius: 100px;
+            left: 23.1vw;
+        }
+    }
+}
+@media only screen and (min-width:1280px){
+    .world{
+        left: 296px;
+    }
+    .ground{
+        left: -307px;
+    }
+    .groundExpand{
+        width: 1310px;
+    }
+    .block-1, .block-2, .block-5, .block-6 {
+        left: 493px;
+    }
+    .block-3, .block-4 {
+        left: 525px;
+    }
+    .block-7, .block-8, .block-9, .block-10, .block-11, .block-12, .block-13 {
+        left: 684px;
+    }
+    .block-10, .block-23{
+        top: 378px;
+    }
+    @keyframes block-10{
+        0%{}100%{
+            left: 684px;
+        }
+    }
+    .block-16, .block-17 {
+        left: 147px;
+    }
+    .block-20, .block-21, .block-22, .block-23, .block-24, .block-25, .block-26{
+        left: -13px;
+    }
+    .block-27{
+        left: 325px;
+    }
+    .block-28{
+        left: 337px;
+    }
+    .block-14, .block-15, .block-18, .block-19 {
+        left: 179px;
+    }
+    .road-1{
+        left:328px;
+
+    }
+    .road-2{
+        left:384px;
+
+    }
+    .road-3, .road-4, .road-5, .road-6, .road-7, .road-8 {
+        left: 361px;
+    }
+    
+    .road-9{
+        left: 150px;
+    }
+    .road-10{
+        left: 555px;
+    }
+    .road-11{
+        left: 85px;
+    }
+    .road-12{
+        left: 625px;
+    }
+    .road-13{
+        left: 344px;
+    }
+    .road-14{
+        left: 329px;
+    }
+    .road-15{
+        left: 414px;
+    }
+    .road-16{
+        left: 573px;
+    }
+    .road-17{
+        left: 160px;
+    }
+    .road-18{
+        left: 265px;
+        top: 133px;
+    }
+    @keyframes road-18{
+        0%{}100%{
+            height: 190px;
+            top: 125px;
+            left: 265px;
+        }
+    }
+    .road-19{
+        left: 474px;
+    }
+    @keyframes road-19{
+        0%{}100%{
+            height: 190px;
+            top: 130px;
+            left: 474px;
+        }
+    }
+    .road-20{
+        left: 350px;
+    }
+    @keyframes road-20{
+        0%{}100%{    
+            left: 474px;
+        }
+    }
+    .road-21{
+        left: 140px;
+    }
+    .road-22{
+        left: 600px;
+    }
+    .road-23{
+        left: 180px;
+    } 
+    .road-24{
+        left: 565px;
+    }
+    .roundabout{
+            width: 225px;
+            left: 262px;
+            border-radius: 150px;
+            
+    }
+    .roundaboutB{
+            width: 125px;
+            border-radius: 100px;
+            left: 24.3vw;
+            left:311px;
+    }
+    .fountain{
+            left: 340px;
+    }
+
+}
+@media only screen and (min-height:578px){
+    body{
+        overflow-x: visible;
+    }
+    .world
+    {	
+        float:left;
+        zoom:0;
+        position:absolute;
+        left:252px;
+        top:-10vh;
+        width:742px;
+        height:578px;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transform: rotate3d(1,0,0,0deg) rotate3d(0,0,1,360deg);
+         animation: enterM 20s ease 9s forwards;
+        -webkit-animation: enterM 20s ease 9s forwards;
+        -moz-animation: enterM 20s ease 9s forwards; 
+      }   
+       @keyframes enterM {
+        0%{
+        }
+        12.5%{
+            -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,360deg);
+        }
+        25%{
+            -webkit-transform: rotate3d(1,0,0,75deg) rotate3d(0,0,1,260deg);
+        }
+        37.5%{
+            -webkit-transform: rotate3d(1,0,0,50deg) rotate3d(0,0,1,120deg);
+        }45%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:578px;
+            top:66px;
+            left:262px;
+            zoom: 0;
+        }55%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:0px;
+            top:350px;
+            left:262px;
+            zoom: 0;
+        }
+         55.1%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height: 850px;
+            top: -225px;
+            left: -57px;
+            zoom:2;
+        }75%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:300px;
+            top: 50px;
+            left: -57px;
+            zoom:2;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:578px;
+            top: -1.7vh;
+            left: -57px;
+            zoom:2;
+        }  
+    } 
+    .ground{
+        top: -150px;
+    }
+    .groundExpand{
+        height: 1050px;
+    }
+    .building .west{
+        width: 75px;
+    }
+    .building .east{
+        width: 75px;
+    }
+    .building .north{
+        width: 75px;
+    }
+    .building .south{
+        width: 75px;
+        top: 24.5px;
+    }  
+    @keyframes block-27{
+        0%{}100%{
+            height: 110px;
+            top: 170px;
+            width: 180px;
+            left: 283px;
+        }
+    }
+
+    .block-1, .block-7, .block-14, .block-20{
+        top: 667px;
+    }
+    .block-2, .block-8, .block-15, .block-21{
+        top: 571px;
+    }
+    .block-3, .block-9, .block-16, .block-22{
+        top: 475px;
+    }
+    .block-4, .block-11, .block-17, .block-24{
+        top: 284px;
+    }
+    .block-5, .block-12, .block-18, .block-25{
+        top: 174px;
+    }
+    .block-6, .block-13, .block-19, .block-26, .block-28{
+        top: 65px;
+    }
+    .road-1{
+        top: 510px;
+        width: 39px;
+        height: 400px; 
+    }
+    @keyframes road-1{
+        0%{}100%{
+            top: 510px;
+            height: 400px;         
+        }
+    }    
+    .road-2{
+        top: 510px;
+        width: 39px;
+        height: 400px; 
+    }
+    @keyframes road-2{
+        0%{}100%{
+            top: 510px;
+            height: 400px;         
+        }
+    }
+    .road-3, .road-4, .road-5, .road-6, .road-7, .road-8 {
+        height: 695px;
+        width: 13px;
+    }
+    .road-3{
+        top: 376px;
+    }
+    @keyframes road-3{
+        0%{}100%{
+            top: 376px;
+        }
+    }
+    .road-4{
+        top: 347px;
+    }
+    @keyframes road-4{
+        0%{}100%{
+            top: 347px;
+        }
+    }
+    .road-5{
+        top: 281px
+    }
+    @keyframes road-5{
+        0%{}100%{
+            top: 281px;
+        }
+    }
+    .road-6{
+        top: 250px;
+    }
+    @keyframes road-6{
+        0%{}100%{
+            top: 250px;
+        }
+    }
+    .road-7{
+        top: 186px;
+    }
+    @keyframes road-7{
+        0%{}100%{
+            top: 186px;
+        }
+    }
+    .road-8{
+        top: 156px;
+    }
+    @keyframes road-8{
+        0%{}100%{
+            top:156px;
+        }
+    }
+    .road-9{
+        height: 260px;
+        width: 45px;
+        top: 290px;
+    }
+    @keyframes road-9{
+        0%{}100%{
+            top: 290px;
+            left: 150px;
+        }
+    } 
+    .road-10{
+        height: 260px;
+        width: 45px;
+        top: 290px;
+    }
+    @keyframes road-10{
+        0%{}100%{
+            height: 260px;
+            top: 290px;
+        }
+    } 
+    .road-11{
+        height: 610px;
+        width: 38px;
+        top: 110px;
+    }
+    @keyframes road-11{
+        0%{}100%{
+            height: 610px;
+        }
+    } 
+    .road-12{
+        height: 610px;
+        width: 38px;
+        top: 110px;
+    }
+    @keyframes road-12{
+        0%{}100%{
+            height: 610px;
+        }
+    } 
+    .road-13{
+        height: 80px;
+        width: 64px;
+        top: 245px;
+    }
+    .road-14{
+        height: 78px;
+        width: 9px;
+        top: 245px;
+    }
+    .road-15{
+        height: 78px;
+        width: 9px;
+        top: 245px;
+
+    }
+    .road-16{
+        height: 335px;
+        width: 19px;
+        top: 145px;
+    }
+    @keyframes road-16{
+        0%{}100%{
+            height: 335px;
+            top: 145px;
+        }
+    } 
+    .road-17{
+        height: 335px;
+        width: 19px;
+        top: 145px;
+    }
+    @keyframes road-17{
+        0%{}100%{
+            height: 335px;
+            top: 145px;
+        }
+    }   
+    .road-18{
+        height: 193px;
+        width: 13px;
+        top: 110px;
+    }
+    @keyframes road-18{
+        0%{}100%{
+            height: 193px;
+            top: 110px;
+            left: 265px;
+        }
+    }  
+    .road-19{
+        height: 193px;
+        width: 13px;
+        top: 110px;
+    }
+    @keyframes road-19{
+        0%{}100%{
+            height: 193px;
+            top: 110px;
+            left: 474px;
+        }
+    }  
+    .road-20{
+        height: 693px;
+        width: 13px;
+        top: -243px;
+    }
+    @keyframes road-20{
+        0%{}100%{
+            height: 693px;
+            top: -243px;
+            left: 350px;
+        }
+    }    
+    
+    .road-21{
+        height: 237px;
+        width: 13px;
+        top: 97px;
+    }
+    @keyframes road-21{
+        0%{}100%{
+            height: 237px;
+            left: 140px;
+            top: 97px;
+        }
+    }   
+    .road-22{
+        height: 237px;
+        width: 13px;
+            top:97px;
+    }
+    @keyframes road-22{
+        0%{}100%{
+            height: 237px;
+            top: 97px;
+            left: 620px;
+        }
+    }   
+    .road-23{
+        width: 13px;
+    }
+    .road-24{
+        width: 13px;
+    }
+    .roundabout{
+            height: 225px;
+            top: 305px;
+            border-radius: 150px;
+    }
+    @keyframes roundAbout{
+        0%{}100%{
+            height: 225px;
+            top: 305px;
+            border-radius: 150px;
+            width: 225px;
+            left: 262px;
+        }
+    }
+    .roundaboutB{
+            top: 350px;
+            height: 125px;
+            border-radius: 100px;
+    }
+    @keyframes roundAboutB{
+        0%{}100%{
+            top: 350px;
+            height: 125px;
+            border-radius: 100px;
+            width: 125px;
+            left: 311px;
+        }
+    }
+    .fountain{
+            top: 375px;
+    }
+    @keyframes fountain{
+        0%{}100%{
+            top: 375px;
+            left: 340px;
+        }
+    }
+    .fountainOn:hover #show-fountain, .fountainOn:hover .west,.fountainOn:hover .east,.fountainOn:hover .north,.fountainOn:hover .south,.fountainOn:hover .westB,.fountainOn:hover .eastB,.fountainOn:hover .northB,.fountainOn:hover .southB{
+        opacity: 1;
+    }
+    .fountain article{
+        width: 100%;
+        height: 100%;
+    }
+    .fountain .west{
+        top: -48px;
+        left: 1px;
+        opacity:0;
+    }
+    /*.fountain .west:hover{
+        opacity:1;
+    }*/
+    .fountain .east{
+        -webkit-transform:rotate3d(1,1,1,120deg);
+        top: -36px;
+        left: 45px;
+        width: 25px;
+        height: 12px;
+        opacity:0;
+    }
+    /*.fountain .east:hover{
+        opacity:1;
+    }*/
+    .fountain .south{
+        height: 12px;
+        width: 40px;
+        top: -29px;
+        left: -9px;
+        opacity:0;
+    }
+    /*.fountain .south:hover{
+        opacity:1;
+    }*/
+    .fountain .north{
+            opacity:0;
+            width: 40px;
+            top: -71px;
+            left: -13px;
+    }
+    /*.fountain .north:hover{
+        opacity:1;
+    }*/
+    .fountain .eastB
+{
+    top: -91px;
+    left: 20px;
+	width:28px;
+	height:12px;
+	-webkit-transform-origin:0% 0%;
+	-webkit-transform:rotate3d(-251,-138,-140,-105deg);
+    opacity: 0;
+}
+
+    /*.fountain .eastB:hover{
+        opacity:1;
+    }*/
+    .fountain .westB{
+        height: 23px;
+        top: -72.5px;
+        left: -16.5px;
+        -webkit-transform-origin: 100% 100%;
+        -webkit-transform: rotate3d(370,-176,-362,-148deg);
+        opacity:0;
+    }
+    /*.fountain .westB:hover{
+        opacity:1;
+    }*/
+    .fountain .southB{
+        left: 39px;
+        top: -69px;
+        height: 23px;
+        opacity:0;
+    }
+    /*.fountain .eastB:hover{
+        opacity:1;
+    }*/
+    .fountain .northB{
+        top: -73px;
+        left: -12px;
+        width:24px;
+        height:12px;
+        -webkit-transform-origin:0% 0%;
+        -webkit-transform:rotate3d(214,-106,-113,-262deg);
+        opacity:0;
+    }
+
+    /*.fountain .northB:hover{
+        opacity:1;
+    }*/
+    .welcome{
+/*         top: -35vh;
+ */     left: 268px;
+        width: 192px;
+        height: 115px;
+        text-align: center;
+        animation: down 4s ease 17.5s forwards;
+        -webkit-animation: down 4s ease 17.5s forwards;
+        -moz-animation: down 4s ease 17.5s forwards;
+        opacity: 0;
+    }
+    .welcome p{
+        left: 50%;
+        top: 47px;
+    }
+    @keyframes down{
+        0%{
+            opacity: 0;
+            top: -144px;
+
+        }20%{
+            -webkit-transform:rotate3d(1,0,0,-90deg);
+            opacity: 1;
+        }40%{
+            -webkit-transform:rotate3d(1,0,0,0deg);
+            opacity: 1;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,0deg);
+            top: -144px;
+
+            opacity: 1;
+        }
+    }
+}
+@media only screen and (min-width:1440px){
+    .world{
+        left: 330px;
+    }
+    @keyframes enterM {
+        0%{
+        }
+        12.5%{
+            -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,360deg);
+        }
+        25%{
+            -webkit-transform: rotate3d(1,0,0,75deg) rotate3d(0,0,1,260deg);
+        }
+        37.5%{
+            -webkit-transform: rotate3d(1,0,0,50deg) rotate3d(0,0,1,120deg);
+        }45%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,-1deg);
+            height:580px;
+            top:9.3vh;
+            left:328px;
+            zoom: 0;
+        }55%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,-1deg);
+            height:0px;
+            top:58.5vh;
+            left:328px;
+            zoom: 0;
+        }55.1%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height: 1000px;
+            top: -50.15vh;
+            left: -20px;
+            zoom:2;
+        }75%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:300px;
+            top: 16.7vh;
+            left: -20px;
+            zoom:2;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:578px;
+            top: -1.7vh;
+            left: -20px;
+            zoom:2;
+        }  
+    }
+
+    .welcome{
+        top: -123px;
+        left:274px;
+        animation: down 4s ease 17.5s forwards;
+        -webkit-animation: down 4s ease 17.5s forwards;
+        -moz-animation: down 4s ease 17.5s forwards;
+     }
+     @keyframes down{
+        0%{
+             opacity:0;
+             top: -123px;
+        }20%{
+            -webkit-transform: rotate3d(1,0,0,-90deg);
+            opacity: 1;
+        }40%{
+            -webkit-transform: rotate3d(1,0,0,0deg);
+            opacity: 1;
+        }100%{
+            top: -123px;
+            opacity: 1;
+            }
+     }
+     .fountain .east{
+        left: 47px;
+    }
+}
+@media only screen and (min-height:700px){
+    .world
+    {	
+        left:330px;
+        top:-10vh;
+        width:742px;
+        height:625px;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transform: rotate3d(1,0,0,0deg) rotate3d(0,0,1,360deg);
+         animation: enterM 20s ease 9s forwards;
+        -webkit-animation: enterM 20s ease 9s forwards;
+        -moz-animation: enterM 20s ease 9s forwards; 
+      }   
+       @keyframes enterM {
+        0%{
+        }
+        12.5%{
+            -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,360deg);
+        }
+        25%{
+            -webkit-transform: rotate3d(1,0,0,75deg) rotate3d(0,0,1,260deg);
+        }
+        37.5%{
+            -webkit-transform: rotate3d(1,0,0,50deg) rotate3d(0,0,1,120deg);
+        }45%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:650px;
+            top:11.9vh;
+            left:347px;
+            zoom: 0;
+        }55%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:0px;
+            top:55vh;
+            left:347px;
+            zoom: 0;
+        }
+         55.1%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height: 1000px;
+            top: -42.15vh;
+            left: -20px;
+            zoom:2;
+        }75%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:500px;
+            top: 7.7vh;
+            left: -20px;
+            zoom:2;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:625px;
+            top: 6vh;
+            left: -20px;
+            zoom:2;
+        }  
+    } 
+}
+/* @media only screen and (min-height: 650px){
+    .world{
+        left: 330px;
+    }
+    @keyframes enterM {
+        0%{
+        }
+        12.5%{
+            -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,360deg);
+        }
+        25%{
+            -webkit-transform: rotate3d(1,0,0,75deg) rotate3d(0,0,1,260deg);
+        }
+        37.5%{
+            -webkit-transform: rotate3d(1,0,0,50deg) rotate3d(0,0,1,120deg);
+        }45%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,-1deg);
+            height:650px;
+            top:62px;
+            left:340px;
+            zoom: 0;
+        }55%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,-1deg);
+            height:0px;
+            top:370px;
+            left:340px;
+            zoom: 0;
+        }55.1%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height: 1000px;
+            top: -300px;
+            left: -20px;
+            zoom:2;
+        }75%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:300px;
+            top: 60px;
+            left: -20px;
+            zoom:2;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:650px;
+            top: -55px;
+            left: -20px;
+            zoom:2;
+        }  
+    }   
+}
+ */
+@media only screen and (min-width: 1920px){
+    .world{
+        left: 571px;
+    }
+    @keyframes enterM {
+        0%{
+        }
+        12.5%{
+            -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,360deg);
+        }
+        25%{
+            -webkit-transform: rotate3d(1,0,0,75deg) rotate3d(0,0,1,260deg);
+        }
+        37.5%{
+            -webkit-transform: rotate3d(1,0,0,50deg) rotate3d(0,0,1,120deg);
+        }45%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:650px;
+            top:11.9vh;
+            left:575px;
+            zoom: 0;
+        }55%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:0px;
+            top:55vh;
+            left:575px;
+            zoom: 0;
+        }
+         55.1%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height: 1000px;
+            top: -42.15vh;
+            left: 95px;
+            zoom:2;
+        }75%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:500px;
+            top: -2vh;
+            left: 95px;
+            zoom:2;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:625px;
+            top: 6vh;
+            left: 95px;
+            zoom:2;
+        }  
+    } 
+    @keyframes fountain{
+        0%{}100%{
+            top: 375px;
+            left: 340.5px;
+        }
+    }
+    @keyframes roundAbout{
+        0%{}100%{
+            height: 225px;
+            top: 305px;
+            border-radius: 150px;
+            width: 225px;
+            left: 262px;
+        }
+    }
+    @keyframes roundAboutB{
+        0%{}100%{
+            top: 350px;
+            height: 125px;
+            border-radius: 100px;
+            width: 125px;
+            left: 313px;
+        }
+    }
+}
+/* @media only screen and (min-height:800px){
+    .block-1, .block-2, .block-5, .block-6 {
+        left: 44.5vw;
+    }
+    .block-3, .block-4 {
+        left: 47.5vw;
+    }
+    .road-1{
+            top: 82vh;
+            height: 49vh;
+            left: 25.5vw;
+    }
+    @keyframes road-1{
+        0%{}100%{
+            top: 82vh;
+            height: 49vh;
+            left: 25.5vw;
+        }
+    }
+    .road-2{
+            top: 82vh;
+            height: 49vh;
+            left: 30.1vw;
+    }
+    @keyframes road-2{
+        0%{}100%{
+            top: 82vh;
+            height: 49vh;
+            left: 30.1vw;
+        }
+    }
+    .road-3{
+            height: 150vh;
+            top: 47vh;
+    }
+    @keyframes road-3{
+        0%{}100%{
+            height: 150vh;
+            top: 47vh;
+        }
+    }
+    .road-4{
+            height: 150vh;
+            top: 43vh;
+    }
+    @keyframes road-4{
+        0%{}100%{
+            height: 150vh;
+            top: 43vh;
+        }
+    }
+    .road-5{
+            height: 150vh;
+            top: 30.5vh;
+    }
+    @keyframes road-5{
+        0%{}100%{
+            height: 150vh;
+            top: 30.5vh;
+        }
+    }
+    .road-6{
+            height: 150vh;
+            top: 26.5vh;
+    }
+    @keyframes road-6{
+        0%{}100%{
+            height: 150vh;
+            top: 26.5vh;
+        }
+    }
+    .road-7{
+            height: 150vh;
+            top: 14.5vh;
+    }
+    @keyframes road-7{
+        0%{}100%{
+            height: 150vh;
+            top: 14.5vh;
+        }
+    }
+    .road-8{
+            height: 150vh;
+            top: 10.5vh;    
+    }
+    @keyframes road-8{
+        0%{}100%{
+            height: 150vh;
+            top: 10.5vh;
+        }
+    }
+    .road-9{
+            top: 38.5vh;
+            left: -1vw;
+    }
+    @keyframes road-9{
+        0%{}100%{
+            top: 38.5vh;
+            left: -1vw;
+        }
+    }
+    .road-10{
+        height: 61vh;
+        left: 54.9vw;
+        top: 40.5vh;
+    }
+    @keyframes road-10{
+        0%{}100%{
+            top: 40.5vh;
+        }
+    }
+    .road-13{
+        height: 14vh;
+        top: 42vh;
+    }
+    .road-14, .road-15{
+        height: 15vh;
+        top: 42vh;
+    }
+    .road-16{
+            height: 69vh;
+            top: 18vh;
+            left: 53vw;
+    }
+    @keyframes road-16{
+        0%{}100%{
+            height: 69vh;
+            top: 18vh;
+            left: 53vw;
+        }
+    }
+    .road-17{
+        height: 69vh;
+        top: 18vh;
+        left: 4vw;
+    }
+    @keyframes road-17{
+        0%{}100%{
+            height: 69vh;
+            top: 18vh;
+            left: 4vw;
+        }
+    }
+    .road-19{
+            height: 29vh;
+            top: 24vh;
+            left: 38.5vw;
+    }
+    @keyframes road-19{
+        0%{}100%{
+            height: 29vh;
+            top: 24vh;
+            left: 38.5vw;
+        }
+    }
+    .road-20{
+            height: 140vh;
+            top: -47vh;
+            left: 28vw;
+    }
+    @keyframes road-20{
+        0%{}100%{
+            height: 140vh;
+            top: -47vh;
+        }
+    }
+    .road-21{
+            height: 56vh;
+            left: 2vw;
+            top: 11vh;
+    }
+    @keyframes road-21{
+        0%{}100%{
+            height: 56vh;
+            top: 11vh;
+        }
+    }
+    .road-22{
+        height: 56vh;
+        top: 11vh;
+        left: 55.5vw;  
+    }
+    @keyframes road-22{
+        0%{}100%{
+            height: 56vh;
+            top: 11vh;
+            left: 55.5vw;
+        }
+    }
+    .road-23{
+        top: 58vh;
+    }
+    @keyframes road-23{
+        0%{}100%{
+            top: 58vh;
+        }
+    }
+    .road-24{
+        left: 50.8vw;
+        top: 58vh;
+    }
+    @keyframes road-24{
+        0%{}100%{
+            top: 58vh;
+        }
+    }
+    .roundaboutB{
+            top: 61.6vh;
+            height: 125px;
+            border-radius: 100px;
+            width: 125px;
+            left: 24.3vw;
+    }
+    @keyframes roundAboutB{
+        0%{}100%{
+            top: 61.6vh;
+            height: 125px;
+            border-radius: 100px;
+            width: 125px;
+            left: 24.3vw;
+        }
+    }
+    .fountain{
+        top: 65vh;
+        left: 26.5vw;  
+    }
+    @keyframes fountain{
+        0%{}100%{
+            top: 65vh;
+            left: 26.5vw;        
+        }
+    }
+} */
+/* @media only screen and (min-width:1400px){
+    .block-27{
+        left: 25.3vw;
+    }
+    @keyframes block-27{
+        0%{}100%{
+        height: 125px;
+        width: 180px;
+        top: 29vh;
+        left: 23.3vw;
+        }
+    }
+    .road-1{
+        left: 25.75vw;
+    }
+    @keyframes road-1{
+        0%{}100%{
+            left: 25.75vw;
+        }
+    }
+    .road-2{
+        left: 31vw;
+    }
+    @keyframes road-2{
+        0%{}100%{
+            left: 31vw;
+        }
+    }
+    .road-9{
+        left: 0vw;
+    }
+    @keyframes road-9{
+        0%{}100%{
+        left: 0vw;
+        }
+    }
+    .road-10{
+        left: 52.7vw;
+    }
+    @keyframes road-10{
+        0%{}100%{
+            left: 52.7vw;
+        }
+    }
+    .road-13{
+        left: 27.3vw;
+    }
+    @keyframes road-13{
+        0%{}100%{
+            left: 27.3vw;
+        }
+    }
+    .road-14{
+        left: 26vw;
+    }
+    @keyframes road-14{
+        0%{}100%{
+            left: 26vw;
+        }
+    }
+    .road-15{
+        left: 32.9vw;
+    }
+    @keyframes road-15{
+        0%{}100%{
+            left: 32.9vw;
+        }
+    }
+    .road-16{
+        left: 51.5vw;
+    }
+    @keyframes road-16{
+        0%{}100%{
+            left: 52vw;
+        }
+    }
+    .road-17{
+        height: 67vh;
+        top: 20vh;
+        left: 4vw;
+    }
+    @keyframes road-17{
+        0%{}100%{
+            left: 4vw;
+        }
+    }
+    .road-21{
+        height: 51vh;
+        left: 2vw;
+        top: 12.5vh;
+    }
+    @keyframes road-21{
+        0%{}100%{
+            left: 2vw;
+        }
+    }
+    .road-22{
+        height: 53vh;
+        top: 11vh;
+        left: 55vw;
+    }
+    @keyframes road-22{
+        0%{}100%{
+            left: 55vw;;
+        }
+    }
+    .roundabout{
+            height: 225px;
+            top: 55.5vh;
+            border-radius: 150px;
+            width: 225px;
+            left: 21.7vw;
+    }
+    @keyframes roundAbout{
+        0%{}100%{
+            left: 21.7vw;
+        }
+    }
+    .roundaboutB{
+        left: 25.4vw;
+    }
+    @keyframes roundAboutB{
+        0%{}100%{
+            left: 25.4vw;
+        }
+    }
+    .fountain{
+        left: 27.3vw;
+    }
+    @keyframes fountain{
+        0%{}100%{
+            left: 27.3vw;
+        }
+    }
+}*/
+@media only screen and (min-height:900px){
+    .world{
+        left: 571px;
+    }
+    @keyframes enterM {
+        0%{
+        }
+        12.5%{
+            -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,360deg);
+        }
+        25%{
+            -webkit-transform: rotate3d(1,0,0,75deg) rotate3d(0,0,1,260deg);
+        }
+        37.5%{
+            -webkit-transform: rotate3d(1,0,0,50deg) rotate3d(0,0,1,120deg);
+        }45%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:575.5px;
+            top:24.5vh;
+            left:576px;
+            zoom: 0;
+        }55%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:0px;
+            top:54.5vh;
+            left:576px;
+            zoom: 0;
+        }
+         55.1%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height: 900px;
+            top: -20.5vh;
+            left: 95px;
+            zoom:2;
+        }75%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:300px;
+            top: 13vh;
+            left: 95px;
+            zoom:2;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:625px;
+            top: 10vh;
+            left: 95px;
+            zoom:2;
+        }  
+    } 
+} 
+@media only screen and (min-height:1080px){
+    .world{
+        left: 571px;
+    }
+    @keyframes enterM {
+        0%{
+        }
+        12.5%{
+            -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,360deg);
+        }
+        25%{
+            -webkit-transform: rotate3d(1,0,0,75deg) rotate3d(0,0,1,260deg);
+        }
+        37.5%{
+            -webkit-transform: rotate3d(1,0,0,50deg) rotate3d(0,0,1,120deg);
+        }45%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:527px;
+            top:31vh;
+            left:582px;
+            zoom: 0;
+        }55%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:0px;
+            top:54.5vh;
+            left:582px;
+            zoom: 0;
+        }
+         55.1%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height: 900px;
+            top: -13.5vh;
+            left: 103px;
+            zoom:2;
+        }75%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:200px;
+            top: 20vh;
+            left: 103px;
+            zoom:2;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:625px;
+            top: 13vh;
+            left: 103px;
+            zoom:2;
+        }  
+    } 
+    .welcome{
+        left: 267px;
+    }
+    .fountain .west{
+        top: -58px; 
+        left: 1.5px;
+    }
+    .fountain .east{ 
+        top:-47px;
+        left: 56px;
+    }
+    .fountain .south{ 
+        left: -4px;
+    }
+    .fountain .north{
+        top: -79px; 
+        left: -11px;
+    }
+    .fountain .eastB{
+        top: -111px; 
+        left: 40px;
+    }
+    .fountain .southB{
+        top: -61px; 
+        left: -4px;
+    }
+    .fountain .northB{
+        top: -91px; 
+        left: 2px;
+    }
+    .fountain .westB{
+        top: -60.5px; 
+        left: -77.5px;
+    }
+    @keyframes fountain{
+        0%{}100%{
+            top: 375px;
+            left: 336.5px;
+        }
+    }
+    @keyframes roundAbout{
+        0%{}100%{
+            height: 225px;
+            top: 305px;
+            border-radius: 150px;
+            width: 225px;
+            left: 265px;
+        }
+    }
+} 
+@media only screen and (min-width:2560px){
+    .world{
+        left: 900px;
+    }
+    @keyframes enterM {
+        0%{
+        }
+        12.5%{
+            -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,360deg);
+        }
+        25%{
+            -webkit-transform: rotate3d(1,0,0,75deg) rotate3d(0,0,1,260deg);
+        }
+        37.5%{
+            -webkit-transform: rotate3d(1,0,0,50deg) rotate3d(0,0,1,120deg);
+        }45%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:527px;
+            top:31vh;
+            left:913px;
+            zoom: 0;
+        }55%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:0px;
+            top:54.5vh;
+            left:902.5px;
+            zoom: 0;
+        }
+         55.1%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height: 800px;
+            top: -9.5vh;
+            left: 260px;
+            zoom:2;
+        }75%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:200px;
+            top: 21vh;
+            left: 260px;
+            zoom:2;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:425px;
+            top: 25vh;
+            left: 260px;
+            zoom:2;
+        }  
+    } 
+}
+@media only screen and (min-height:1440px){
+    .world{
+        top: 15vh;
+        left: 900px;
+    }
+    @keyframes enterM {
+        0%{
+        }
+        12.5%{
+            -webkit-transform: rotate3d(1,0,0,60deg) rotate3d(0,0,1,360deg);
+        }
+        25%{
+            -webkit-transform: rotate3d(1,0,0,75deg) rotate3d(0,0,1,260deg);
+        }
+        37.5%{
+            -webkit-transform: rotate3d(1,0,0,50deg) rotate3d(0,0,1,120deg);
+        }45%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:474px;
+            top:37.6vh;
+            left:913px;
+            zoom: 0;
+        }55%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:0px;
+            top:54.5vh;
+            left:902.5px;
+            zoom: 0;
+        }
+         55.1%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height: 700px;
+            top: 3vh;
+            left: 260px;
+            zoom:2;
+        }75%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:100px;
+            top: 25vh;
+            left: 260px;
+            zoom:2;
+        }100%{
+            -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+            height:300px;
+            top: 32vh;
+            left: 260px;
+            zoom:2;
+        }  
+    } 
+}

@@ -1,0 +1,161 @@
+.fountain .fanimation
+{
+    background:rgba(1,178,0,0);
+    top:-94px;
+    left:24px;
+    width:30px;
+	height:12px;
+	-webkit-transform-origin:100% 100%;
+	-webkit-transform:rotate3d(1,0,0,-90deg);
+}
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rotate-center2 {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center2 {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-center {
+    border: 5px dotted rgba(1,178,0,0.9);
+    border-radius:50%;
+    border-right:none;
+    border-top:none;
+    border-left:none;
+      -webkit-animation: rotate-center 2s linear infinite both;
+              animation: rotate-center 2s linear infinite both;
+  }
+  .rotate-center2 {
+    border: 5px dotted rgba(1,178,0,0.9);
+    border-radius:50%;
+    border-right:none;
+    border-top:none;
+    border-left:none;
+      -webkit-animation: rotate-center 2s linear infinite reverse;
+              animation: rotate-center 2s linear infinite reverse;
+  }
+  .water1 {
+    position:absolute;
+    width:80px;
+    height:80px;
+    top:10px;
+    left:10px;
+  }
+  .water2 {
+    position:absolute;
+    width:100px;
+    height:100px;
+    top:10px;
+    left:10px;
+  }
+  .water3 {
+    position:absolute;
+    width:90px;
+    height:90px;
+    top:10px;
+    left:10px;
+  }
+  .water4 {
+    position:absolute;
+    width:80px;
+    height:80px;
+    top:10px;
+    left:20px;
+  }
+  .water5 {
+    position:absolute;
+    width:90px;
+    height:90px;
+    top:10px;
+    left:10px;
+  }
+  .water6 {
+    position:absolute;
+    width:100px;
+    height:100px;
+    top:10px;
+    left:0;
+  }
+  .fountain-right {
+    position: absolute;
+    left:100px;
+  }
+  .fountain-left {
+    position: absolute;
+    left:10px;
+  }
+  .fountain-animation {
+    position:absolute;
+    
+  }
+  .fountain-animation:after {
+    content:"";
+    display:block;
+    width:220px;
+    height:60px;
+  /*   border: 2px solid red; */
+    position: absolute;
+    top:55px;
+    background-color:black;
+    left:0;
+  }
+  .small {
+    top:50px;
+    left:0px;
+  }
+  .big {
+    top:20px;
+    left:0px;
+    transform:scaleY(1.6);
+   
+  }
+  #second-fountain {
+    position:absolute;
+    top: -91px;
+    left: -110px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate3d(1,0,0,8deg);
+    -webkit-transform-style: preserve-3d;
+  }
+  #show-fountain {
+    opacity: 0;
+  }
+  @media only screen and (min-height:1080px){
+  .fountain .fanimation{
+    top: -120px;
+    left: 40px;
+    }
+  }

@@ -1,0 +1,23 @@
+@keyframes enterM {
+    0% {
+
+      }
+      50% {
+          -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+          left:4%;
+          top:32vh;
+          height: 50vh;
+      }
+     75%{        
+      -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,0deg);
+      left:4%;
+      top:-50vh;
+      height: 210vh;
+
+  }100%{
+      -webkit-transform: rotate3d(1,0,0,90deg) rotate3d(0,0,1,21deg);
+      left: 134%;
+      top: -48vh;
+      height: 210vh;
+  }   
+}   

@@ -1,0 +1,114 @@
+.introNone{
+  display: none;
+}
+#blurPillB{
+    position: absolute;;
+    width:100vw; 
+    height:100vh;
+    margin:0 auto;
+    overflow:hidden;
+    opacity: 1;
+    z-index: 110;
+
+}
+#blurPillB:after{
+    content:'';
+    position:absolute;
+    left:49%;
+    top:46%;
+    border-radius:100%;
+    width:0em; height:0em;
+    box-shadow: 0px 0px 0px 2000px black;
+    filter: blur(1em);
+    animation: blurB 8s ease .3s forwards;
+    -webkit-animation: blurB 8s ease .3s forwards;
+    -moz-animation: blurB 8s ease .3s forwards;
+}
+@keyframes blurB {
+    0% {
+
+      }
+      100% {
+width: 30em;
+height: 30em;
+margin-left:-15em;
+margin-top:-14em;
+      }
+    }
+    @media only screen and (min-width:600px){
+        @keyframes blurB {
+            0% {
+        
+              }
+              100% {
+        width: 50em;
+        height: 50em;
+        margin-left:-24.7em;
+        margin-top:-22em;
+              }
+            }
+        }
+        @media only screen and (min-width:800px){
+            @keyframes blurB {
+                0% {
+            
+                  }
+                  100% {
+            width: 65em;
+            height: 65em;
+            margin-left:-32.3em;
+            margin-top:-28.5em;
+                  }
+                }
+            }
+    @media only screen and (min-width:1024px){
+        #blurPillB:after{
+        left:49%;
+        top:46%;
+        }
+        @keyframes blurB {
+            0% {
+        
+              }
+              100% {
+        width: 30em;
+        height: 30em;
+        margin-left:-14.3em;
+        margin-top:-14em;
+              }
+            }
+    }
+    @media only screen and (min-width:1400px){
+        #blurPillB:after{
+        left:49%;
+        top:46%;
+        }
+        @keyframes blurB {
+            0% {
+        
+              }
+              100% {
+        width: 38em;
+        height: 38em;
+        margin-left:-18.3em;
+        margin-top:-16em;
+              }
+            }
+        }
+        @media only screen and (min-width:1600px){
+            #blurPillB:after{
+            left:49%;
+            top:46%;
+            }
+            @keyframes blurB {
+                0% {
+            
+                  }
+                  100% {
+            width: 43em;
+            height: 43em;
+            margin-left:-20.8em;
+            margin-top:-19em;
+                  }
+                }
+            }

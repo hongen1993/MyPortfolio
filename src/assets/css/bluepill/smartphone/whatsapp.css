@@ -1,0 +1,68 @@
+.whatsappO{
+  height: 95%;
+  width: 100%;
+  top: 4%;
+  background-image: url(/src/assets/img/smartphone/whatsapp.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  z-index: 1;
+
+}
+.contactMe{
+  position: absolute;
+  height: 2.5em;
+  width: 2em;
+  top: 84%;
+  left:83%;
+  border-radius: 1em;
+  background: transparent;
+  cursor: pointer;
+}
+.writeMessage{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(/src/assets/img/smartphone/contactMe.jpg);
+  background-size: cover;
+}
+.msgWhatsapp{
+  height: 11%;
+  width: 100%;
+  top: 30%;
+  position: absolute;
+}
+.julia{
+  height: 11%;
+  width: 100%;
+  top: 41%;
+  position: absolute;
+  cursor: pointer;
+}
+.contactJulia{
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: 15%;
+  cursor: pointer;
+}
+.msgJulia{
+  position: absolute;
+  height: 95%;
+  width: 100%;
+  background: url(/src/assets/img/smartphone/juliamsg.png);
+  background-size: 100% 100%;
+}
+.chatBackButton{
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  left: 65%;
+  cursor: pointer;
+}
+.whatsappButtonBackB{
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  left: 65%;
+  cursor: pointer;
+}
